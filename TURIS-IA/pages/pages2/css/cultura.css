@@ -1,0 +1,3903 @@
+/* =========================================================
+   TURIS-IA
+   CULTURA · SAN BARTOLOMÉ
+   CSS PRINCIPAL
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --culture-primary: #0f766e;
+    --culture-primary-dark: #115e59;
+    --culture-primary-light: #14b8a6;
+
+    --culture-accent: #d4a017;
+    --culture-accent-light: #f1d47a;
+
+    --culture-dark: #102a2a;
+    --culture-dark-2: #183b3a;
+
+    --culture-text: #263b3a;
+    --culture-text-light: #667675;
+
+    --culture-white: #ffffff;
+    --culture-offwhite: #f7f7f2;
+    --culture-cream: #f1eee5;
+
+    --culture-border: rgba(15, 118, 110, 0.13);
+
+    --culture-shadow:
+        0 20px 60px rgba(16, 42, 42, 0.10);
+
+    --culture-shadow-soft:
+        0 10px 35px rgba(16, 42, 42, 0.07);
+
+    --culture-radius: 18px;
+    --culture-radius-small: 12px;
+
+    --culture-transition:
+        all 0.35s cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    background: var(--culture-offwhite);
+
+    color: var(--culture-text);
+
+    line-height: 1.7;
+
+    overflow-x: hidden;
+
+}
+
+
+img {
+
+    width: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+}
+
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+button,
+a {
+
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+
+::selection {
+
+    background: var(--culture-primary);
+
+    color: white;
+
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #e8ebe7;
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        var(--culture-primary);
+
+    border-radius: 20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:
+        var(--culture-primary-dark);
+
+}
+
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.culture-container {
+
+    width: min(
+        1180px,
+        calc(100% - 48px)
+    );
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.culture-topbar {
+
+    background:
+        var(--culture-dark);
+
+    color: rgba(255,255,255,.72);
+
+    font-size: 12px;
+
+    letter-spacing: .04em;
+
+}
+
+
+.culture-topbar-inner {
+
+    width: min(
+        1180px,
+        calc(100% - 48px)
+    );
+
+    min-height: 36px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.culture-topbar span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.culture-topbar i {
+
+    color:
+        var(--culture-accent);
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.culture-header {
+
+    position: absolute;
+
+    top: 36px;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.culture-header-scrolled {
+
+    position: fixed;
+
+    top: 0;
+
+    background:
+        rgba(16, 42, 42, .94);
+
+    backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.15);
+
+}
+
+
+.culture-navbar {
+
+    width: min(
+        1280px,
+        calc(100% - 60px)
+    );
+
+    min-height: 84px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.culture-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    color: white;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    letter-spacing: -.04em;
+
+}
+
+
+.culture-logo strong {
+
+    color:
+        var(--culture-accent-light);
+
+}
+
+
+.culture-logo-mark {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 11px;
+
+    display: grid;
+
+    place-items: center;
+
+    background:
+        rgba(255,255,255,.12);
+
+    border:
+        1px solid rgba(255,255,255,.18);
+
+}
+
+
+.culture-logo-mark i {
+
+    color:
+        var(--culture-accent-light);
+
+}
+
+
+/* =========================================================
+   NAV
+========================================================= */
+
+.culture-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 27px;
+
+    list-style: none;
+
+}
+
+
+.culture-nav li a {
+
+    color:
+        rgba(255,255,255,.82);
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.culture-nav li a:hover {
+
+    color: white;
+
+}
+
+
+.culture-nav li a.active {
+
+    color:
+        var(--culture-accent-light);
+
+}
+
+
+.culture-ai-button {
+
+    padding:
+        11px 17px;
+
+    border:
+        1px solid rgba(255,255,255,.22);
+
+    border-radius: 100px;
+
+    background:
+        rgba(255,255,255,.08);
+
+}
+
+
+.culture-ai-button:hover {
+
+    background:
+        var(--culture-primary);
+
+    border-color:
+        var(--culture-primary);
+
+}
+
+
+.culture-ai-button i {
+
+    margin-right: 7px;
+
+    color:
+        var(--culture-accent-light);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.culture-hero {
+
+    position: relative;
+
+    min-height: 850px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    color: white;
+
+}
+
+
+.culture-hero-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        url("../img/cultura-san-bartolome.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    transform:
+        scale(1.03);
+
+}
+
+
+.culture-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7,25,25,.94) 0%,
+            rgba(7,25,25,.77) 42%,
+            rgba(7,25,25,.30) 75%,
+            rgba(7,25,25,.20) 100%
+        );
+
+}
+
+
+.culture-hero-pattern {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: .16;
+
+    background-image:
+        radial-gradient(
+            rgba(255,255,255,.4) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        30px 30px;
+
+}
+
+
+.culture-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: min(
+        1180px,
+        calc(100% - 48px)
+    );
+
+    margin: auto;
+
+    padding-top: 70px;
+
+}
+
+
+.culture-eyebrow {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 24px;
+
+    color:
+        var(--culture-accent-light);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: .18em;
+
+}
+
+
+.culture-eyebrow-line {
+
+    width: 42px;
+
+    height: 1px;
+
+    background:
+        var(--culture-accent-light);
+
+}
+
+
+.culture-hero h1 {
+
+    max-width: 780px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(52px, 7vw, 94px);
+
+    line-height: .98;
+
+    letter-spacing: -.065em;
+
+    font-weight: 800;
+
+}
+
+
+.culture-hero h1 span {
+
+    display: block;
+
+    color:
+        var(--culture-accent-light);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-style: italic;
+
+    font-weight: 500;
+
+    letter-spacing: -.04em;
+
+}
+
+
+.culture-hero-description {
+
+    max-width: 610px;
+
+    margin-top: 30px;
+
+    color:
+        rgba(255,255,255,.76);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+.culture-hero-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 35px;
+
+}
+
+
+.culture-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 52px;
+
+    padding:
+        0 21px;
+
+    border-radius: 100px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.culture-button-primary {
+
+    background:
+        var(--culture-primary-light);
+
+    color: white;
+
+}
+
+
+.culture-button-primary:hover {
+
+    background:
+        white;
+
+    color:
+        var(--culture-primary);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+.culture-button-secondary {
+
+    border:
+        1px solid rgba(255,255,255,.25);
+
+    background:
+        rgba(255,255,255,.06);
+
+    color: white;
+
+}
+
+
+.culture-button-secondary:hover {
+
+    background:
+        rgba(255,255,255,.14);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+.culture-hero-facts {
+
+    display: flex;
+
+    margin-top: 70px;
+
+    border-top:
+        1px solid rgba(255,255,255,.18);
+
+    max-width: 900px;
+
+}
+
+
+.culture-hero-fact {
+
+    min-width: 170px;
+
+    padding:
+        21px 25px 0 0;
+
+    margin-right: 25px;
+
+    border-right:
+        1px solid rgba(255,255,255,.15);
+
+}
+
+
+.culture-hero-fact:last-child {
+
+    border: none;
+
+}
+
+
+.culture-hero-fact strong {
+
+    display: block;
+
+    color: white;
+
+    font-size: 14px;
+
+}
+
+
+.culture-hero-fact span {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color:
+        rgba(255,255,255,.54);
+
+    font-size: 11px;
+
+}
+
+
+.culture-scroll {
+
+    position: absolute;
+
+    bottom: 28px;
+
+    right: 6%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size: 9px;
+
+    letter-spacing: .18em;
+
+}
+
+
+.culture-scroll i {
+
+    animation:
+        cultureScroll 1.8s infinite;
+
+}
+
+
+@keyframes cultureScroll {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(7px);
+    }
+
+}
+
+
+/* =========================================================
+   KICKERS
+========================================================= */
+
+.culture-kicker {
+
+    display: inline-block;
+
+    margin-bottom: 17px;
+
+    color:
+        var(--culture-primary);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: .18em;
+
+}
+
+
+.culture-kicker.light {
+
+    color:
+        var(--culture-accent-light);
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.culture-introduction {
+
+    position: relative;
+
+    width: min(
+        1180px,
+        calc(100% - 48px)
+    );
+
+    margin: auto;
+
+    padding:
+        130px 0;
+
+    display: grid;
+
+    grid-template-columns:
+        80px 1fr 320px;
+
+    gap: 50px;
+
+}
+
+
+.culture-section-number {
+
+    color:
+        rgba(15,118,110,.28);
+
+    font-family:
+        "Manrope";
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+}
+
+
+.culture-intro-main h2 {
+
+    max-width: 760px;
+
+    color:
+        var(--culture-dark);
+
+    font-family:
+        "Manrope";
+
+    font-size:
+        clamp(38px, 5vw, 66px);
+
+    line-height: 1.04;
+
+    letter-spacing: -.055em;
+
+}
+
+
+.culture-intro-main h2 em {
+
+    color:
+        var(--culture-primary);
+
+    font-family:
+        "Playfair Display";
+
+    font-weight: 500;
+
+}
+
+
+.culture-lead {
+
+    max-width: 760px;
+
+    margin-top: 30px;
+
+    color:
+        #526462;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+.culture-intro-columns {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 35px;
+
+    margin-top: 30px;
+
+    padding-top: 28px;
+
+    border-top:
+        1px solid var(--culture-border);
+
+}
+
+
+.culture-intro-columns p {
+
+    color:
+        var(--culture-text-light);
+
+    font-size: 14px;
+
+}
+
+
+.culture-intro-card {
+
+    align-self: center;
+
+    padding: 32px;
+
+    border-radius:
+        var(--culture-radius);
+
+    background:
+        var(--culture-dark);
+
+    color: white;
+
+    box-shadow:
+        var(--culture-shadow);
+
+}
+
+
+.culture-intro-card > span {
+
+    color:
+        var(--culture-accent-light);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: .17em;
+
+}
+
+
+.culture-intro-card h3 {
+
+    margin-top: 20px;
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 31px;
+
+    line-height: 1.15;
+
+    font-weight: 500;
+
+}
+
+
+.culture-card-line {
+
+    width: 45px;
+
+    height: 2px;
+
+    margin:
+        25px 0;
+
+    background:
+        var(--culture-accent);
+
+}
+
+
+.culture-intro-card p {
+
+    color:
+        rgba(255,255,255,.64);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   MAPA CULTURAL
+========================================================= */
+
+.culture-map-section {
+
+    padding:
+        120px 0;
+
+    background:
+        var(--culture-dark);
+
+    color: white;
+
+}
+
+
+.culture-heading {
+
+    max-width: 760px;
+
+}
+
+
+.culture-heading.centered {
+
+    margin:
+        0 auto 65px;
+
+    text-align: center;
+
+}
+
+
+.culture-heading h2 {
+
+    font-family:
+        "Manrope";
+
+    font-size:
+        clamp(38px, 5vw, 62px);
+
+    line-height: 1.04;
+
+    letter-spacing: -.055em;
+
+}
+
+
+.culture-heading h2 span {
+
+    color:
+        var(--culture-primary-light);
+
+}
+
+
+.culture-heading p {
+
+    max-width: 680px;
+
+    margin-top: 23px;
+
+    color:
+        var(--culture-text-light);
+
+    font-size: 15px;
+
+}
+
+
+.culture-heading.centered p {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+
+.culture-map-section .culture-heading p {
+
+    color:
+        rgba(255,255,255,.56);
+
+}
+
+
+.culture-map-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+}
+
+
+.culture-map-card {
+
+    position: relative;
+
+    min-height: 285px;
+
+    padding: 30px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255,255,255,.10);
+
+    border-radius:
+        var(--culture-radius);
+
+    background:
+        rgba(255,255,255,.045);
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.culture-map-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(20,184,166,.5);
+
+    background:
+        rgba(20,184,166,.08);
+
+}
+
+
+.culture-map-number {
+
+    position: absolute;
+
+    top: 23px;
+
+    right: 25px;
+
+    color:
+        rgba(255,255,255,.25);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.culture-map-card > i {
+
+    display: block;
+
+    margin-bottom: 55px;
+
+    color:
+        var(--culture-accent-light);
+
+    font-size: 25px;
+
+}
+
+
+.culture-map-card h3 {
+
+    font-family:
+        "Manrope";
+
+    font-size: 21px;
+
+}
+
+
+.culture-map-card p {
+
+    margin-top: 8px;
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+.culture-map-link {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color:
+        var(--culture-primary-light);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+
+.culture-map-link i {
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.culture-map-card:hover
+.culture-map-link i {
+
+    transform:
+        translateX(5px);
+
+}
+
+
+/* =========================================================
+   TRADICIONES
+========================================================= */
+
+.culture-traditions {
+
+    padding:
+        130px 0;
+
+    background:
+        #f7f6f0;
+
+}
+
+
+.tradition-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    gap: 16px;
+
+}
+
+
+.tradition-card {
+
+    position: relative;
+
+    min-height: 370px;
+
+    padding: 32px;
+
+    border-radius:
+        var(--culture-radius);
+
+    overflow: hidden;
+
+    background:
+        white;
+
+    box-shadow:
+        var(--culture-shadow-soft);
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.tradition-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        var(--culture-shadow);
+
+}
+
+
+.tradition-card.large {
+
+    padding: 0;
+
+    color: white;
+
+}
+
+
+.tradition-image {
+
+    position: absolute;
+
+    inset: 0;
+
+}
+
+
+.tradition-image img {
+
+    height: 100%;
+
+}
+
+
+.tradition-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 20%,
+            rgba(8,29,28,.90)
+        );
+
+}
+
+
+.tradition-content {
+
+    position: absolute;
+
+    left: 32px;
+
+    right: 32px;
+
+    bottom: 30px;
+
+}
+
+
+.tradition-content span,
+.tradition-card > span {
+
+    color:
+        var(--culture-primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: .16em;
+
+}
+
+
+.tradition-card.large
+.tradition-content span {
+
+    color:
+        var(--culture-accent-light);
+
+}
+
+
+.tradition-content h3 {
+
+    margin-top: 8px;
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 32px;
+
+    line-height: 1.1;
+
+}
+
+
+.tradition-content p {
+
+    margin-top: 10px;
+
+    color:
+        rgba(255,255,255,.70);
+
+    font-size: 13px;
+
+}
+
+
+.tradition-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    margin-bottom: 65px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(15,118,110,.08);
+
+    color:
+        var(--culture-primary);
+
+    font-size: 20px;
+
+}
+
+
+.tradition-card:not(.large) h3 {
+
+    margin-top: 12px;
+
+    color:
+        var(--culture-dark);
+
+    font-family:
+        "Manrope";
+
+    font-size: 21px;
+
+    line-height: 1.2;
+
+}
+
+
+.tradition-card:not(.large) p {
+
+    margin-top: 10px;
+
+    color:
+        var(--culture-text-light);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   DANZAS
+========================================================= */
+
+.culture-dances {
+
+    padding:
+        140px 0;
+
+    background:
+        white;
+
+}
+
+
+.culture-dances-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+}
+
+
+.culture-dances-image {
+
+    position: relative;
+
+    height: 600px;
+
+    border-radius:
+        24px;
+
+    overflow: hidden;
+
+}
+
+
+.culture-dances-image img {
+
+    height: 100%;
+
+    transition:
+        transform .8s ease;
+
+}
+
+
+.culture-dances-image:hover img {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+.culture-image-label {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    left: 25px;
+
+    padding:
+        10px 15px;
+
+    border-radius: 100px;
+
+    background:
+        rgba(16,42,42,.85);
+
+    backdrop-filter:
+        blur(10px);
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: .1em;
+
+}
+
+
+.culture-image-label i {
+
+    margin-right: 7px;
+
+    color:
+        var(--culture-accent-light);
+
+}
+
+
+.culture-dances-content h2 {
+
+    max-width: 550px;
+
+    color:
+        var(--culture-dark);
+
+    font-family:
+        "Manrope";
+
+    font-size:
+        clamp(42px, 5vw, 65px);
+
+    line-height: 1.03;
+
+    letter-spacing: -.055em;
+
+}
+
+
+.culture-dances-content h2 em {
+
+    color:
+        var(--culture-primary);
+
+    font-family:
+        "Playfair Display";
+
+    font-weight: 500;
+
+}
+
+
+.culture-dances-content > p {
+
+    margin-top: 27px;
+
+    color:
+        var(--culture-text-light);
+
+    font-size: 15px;
+
+}
+
+
+.culture-dance-features {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-top: 35px;
+
+}
+
+
+.culture-dance-features div {
+
+    padding:
+        18px;
+
+    border:
+        1px solid var(--culture-border);
+
+    border-radius:
+        var(--culture-radius-small);
+
+}
+
+
+.culture-dance-features i {
+
+    display: block;
+
+    margin-bottom: 13px;
+
+    color:
+        var(--culture-primary);
+
+}
+
+
+.culture-dance-features strong {
+
+    display: block;
+
+    color:
+        var(--culture-dark);
+
+    font-size: 12px;
+
+}
+
+
+.culture-dance-features span {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color:
+        var(--culture-text-light);
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+}
+
+
+.culture-text-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 35px;
+
+    color:
+        var(--culture-primary);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+}
+
+
+.culture-text-button i {
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.culture-text-button:hover i {
+
+    transform:
+        translateX(6px);
+
+}
+
+
+/* =========================================================
+   GASTRONOMÍA
+========================================================= */
+
+.culture-food {
+
+    padding:
+        130px 0;
+
+    background:
+        var(--culture-cream);
+
+}
+
+
+.food-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 17px;
+
+}
+
+
+.food-card {
+
+    overflow: hidden;
+
+    border-radius:
+        var(--culture-radius);
+
+    background:
+        white;
+
+    box-shadow:
+        var(--culture-shadow-soft);
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.food-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        var(--culture-shadow);
+
+}
+
+
+.food-image {
+
+    height: 260px;
+
+    overflow: hidden;
+
+}
+
+
+.food-image img {
+
+    height: 100%;
+
+    transition:
+        transform .7s ease;
+
+}
+
+
+.food-card:hover
+.food-image img {
+
+    transform:
+        scale(1.06);
+
+}
+
+
+.food-content {
+
+    padding: 28px;
+
+}
+
+
+.food-content span {
+
+    color:
+        var(--culture-primary);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: .16em;
+
+}
+
+
+.food-content h3 {
+
+    margin-top: 8px;
+
+    color:
+        var(--culture-dark);
+
+    font-family:
+        "Manrope";
+
+    font-size: 21px;
+
+    line-height: 1.25;
+
+}
+
+
+.food-content p {
+
+    margin-top: 9px;
+
+    color:
+        var(--culture-text-light);
+
+    font-size: 13px;
+
+}
+
+
+.food-card-featured {
+
+    background:
+        var(--culture-dark);
+
+}
+
+
+.food-card-featured .food-content h3 {
+
+    color: white;
+
+}
+
+
+.food-card-featured .food-content p {
+
+    color:
+        rgba(255,255,255,.58);
+
+}
+
+
+.food-card-featured .food-content span {
+
+    color:
+        var(--culture-accent-light);
+
+}
+
+
+/* =========================================================
+   VESTIMENTA
+========================================================= */
+
+.culture-clothing {
+
+    padding:
+        130px 0;
+
+    background:
+        var(--culture-dark);
+
+    color: white;
+
+}
+
+
+.clothing-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 90px;
+
+    align-items: center;
+
+}
+
+
+.clothing-content h2 {
+
+    font-family:
+        "Manrope";
+
+    font-size:
+        clamp(40px, 5vw, 64px);
+
+    line-height: 1.04;
+
+    letter-spacing: -.055em;
+
+}
+
+
+.clothing-content h2 em {
+
+    color:
+        var(--culture-accent-light);
+
+    font-family:
+        "Playfair Display";
+
+    font-weight: 500;
+
+}
+
+
+.clothing-content > p {
+
+    max-width: 570px;
+
+    margin-top: 27px;
+
+    color:
+        rgba(255,255,255,.60);
+
+    font-size: 15px;
+
+}
+
+
+.clothing-list {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+}
+
+
+.clothing-list div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding:
+        14px;
+
+    border:
+        1px solid rgba(255,255,255,.10);
+
+    border-radius:
+        10px;
+
+}
+
+
+.clothing-list span {
+
+    color:
+        var(--culture-accent-light);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+}
+
+
+.clothing-list strong {
+
+    font-size: 12px;
+
+}
+
+
+.clothing-image {
+
+    height: 570px;
+
+    border-radius:
+        24px;
+
+    overflow: hidden;
+
+}
+
+
+.clothing-image img {
+
+    height: 100%;
+
+}
+
+
+/* =========================================================
+   PATRIMONIO
+========================================================= */
+
+.culture-heritage {
+
+    padding:
+        135px 0;
+
+    background:
+        #f7f6f0;
+
+}
+
+
+.heritage-culture-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 17px;
+
+}
+
+
+.heritage-culture-card {
+
+    position: relative;
+
+    min-height: 350px;
+
+    padding: 35px;
+
+    border:
+        1px solid rgba(15,118,110,.10);
+
+    border-radius:
+        var(--culture-radius);
+
+    background: white;
+
+    overflow: hidden;
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.heritage-culture-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(15,118,110,.30);
+
+    box-shadow:
+        var(--culture-shadow);
+
+}
+
+
+.heritage-culture-number {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 28px;
+
+    color:
+        rgba(15,118,110,.18);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+}
+
+
+.heritage-culture-card > i {
+
+    margin-top: 30px;
+
+    color:
+        var(--culture-primary);
+
+    font-size: 30px;
+
+}
+
+
+.heritage-culture-card h3 {
+
+    margin-top: 40px;
+
+    color:
+        var(--culture-dark);
+
+    font-family:
+        "Manrope";
+
+    font-size: 22px;
+
+}
+
+
+.heritage-culture-card p {
+
+    margin-top: 10px;
+
+    color:
+        var(--culture-text-light);
+
+    font-size: 13px;
+
+}
+
+
+.heritage-culture-card > span {
+
+    position: absolute;
+
+    bottom: 28px;
+
+    left: 35px;
+
+    color:
+        var(--culture-primary);
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: .12em;
+
+}
+
+
+/* =========================================================
+   MEMORIA
+========================================================= */
+
+.culture-memory {
+
+    position: relative;
+
+    min-height: 670px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    color: white;
+
+}
+
+
+.culture-memory-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10,34,33,.96),
+            rgba(10,34,33,.73)
+        ),
+        url("../img/memoria-san-bartolome.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.culture-memory-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+
+}
+
+
+.memory-culture-content h2 {
+
+    max-width: 650px;
+
+    font-family:
+        "Manrope";
+
+    font-size:
+        clamp(42px, 5vw, 67px);
+
+    line-height: 1.02;
+
+    letter-spacing: -.055em;
+
+}
+
+
+.memory-culture-content p {
+
+    max-width: 600px;
+
+    margin-top: 27px;
+
+    color:
+        rgba(255,255,255,.64);
+
+    font-size: 15px;
+
+}
+
+
+.memory-culture-content
+.culture-button {
+
+    margin-top: 30px;
+
+}
+
+
+.memory-culture-card {
+
+    padding:
+        50px;
+
+    border:
+        1px solid rgba(255,255,255,.16);
+
+    border-radius:
+        22px;
+
+    background:
+        rgba(255,255,255,.07);
+
+    backdrop-filter:
+        blur(15px);
+
+}
+
+
+.memory-quote-mark {
+
+    color:
+        var(--culture-accent-light);
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 90px;
+
+    line-height: .5;
+
+}
+
+
+.memory-culture-card blockquote {
+
+    margin-top: 25px;
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 30px;
+
+    line-height: 1.25;
+
+}
+
+
+.memory-culture-card > span {
+
+    display: block;
+
+    margin-top: 30px;
+
+    color:
+        rgba(255,255,255,.40);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: .14em;
+
+}
+
+
+/* =========================================================
+   CULTURA VIVA
+========================================================= */
+
+.living-culture {
+
+    padding:
+        135px 0;
+
+    background:
+        white;
+
+}
+
+
+.living-culture-flow {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.living-step {
+
+    width: 210px;
+
+    min-height: 250px;
+
+    padding: 28px;
+
+    border:
+        1px solid var(--culture-border);
+
+    border-radius:
+        var(--culture-radius);
+
+    background:
+        white;
+
+    text-align: center;
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.living-step:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        var(--culture-shadow);
+
+}
+
+
+.living-step > span {
+
+    display: block;
+
+    color:
+        rgba(15,118,110,.35);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+}
+
+
+.living-step > i {
+
+    margin-top: 20px;
+
+    color:
+        var(--culture-primary);
+
+    font-size: 28px;
+
+}
+
+
+.living-step h3 {
+
+    margin-top: 15px;
+
+    color:
+        var(--culture-dark);
+
+    font-family:
+        "Manrope";
+
+    font-size: 17px;
+
+}
+
+
+.living-step p {
+
+    margin-top: 6px;
+
+    color:
+        var(--culture-text-light);
+
+    font-size: 11px;
+
+}
+
+
+.living-line {
+
+    width: 45px;
+
+    height: 1px;
+
+    background:
+        rgba(15,118,110,.25);
+
+}
+
+
+/* =========================================================
+   PARTICIPACIÓN
+========================================================= */
+
+.culture-participation {
+
+    padding:
+        120px 0;
+
+    background:
+        var(--culture-cream);
+
+}
+
+
+.participation-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+
+}
+
+
+.participation-content h2 {
+
+    color:
+        var(--culture-dark);
+
+    font-family:
+        "Manrope";
+
+    font-size:
+        clamp(40px, 5vw, 61px);
+
+    line-height: 1.05;
+
+    letter-spacing: -.055em;
+
+}
+
+
+.participation-content h2 span {
+
+    color:
+        var(--culture-primary);
+
+}
+
+
+.participation-content p {
+
+    max-width: 600px;
+
+    margin-top: 25px;
+
+    color:
+        var(--culture-text-light);
+
+    font-size: 15px;
+
+}
+
+
+.participation-actions {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.participation-actions a {
+
+    display: grid;
+
+    grid-template-columns:
+        40px 1fr 20px;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding:
+        20px;
+
+    border:
+        1px solid rgba(15,118,110,.11);
+
+    border-radius:
+        14px;
+
+    background:
+        white;
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.participation-actions a:hover {
+
+    transform:
+        translateX(7px);
+
+    border-color:
+        var(--culture-primary);
+
+    box-shadow:
+        var(--culture-shadow-soft);
+
+}
+
+
+.participation-actions a > i:first-child {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 10px;
+
+    background:
+        rgba(15,118,110,.08);
+
+    color:
+        var(--culture-primary);
+
+}
+
+
+.participation-actions strong {
+
+    display: block;
+
+    color:
+        var(--culture-dark);
+
+    font-size: 13px;
+
+}
+
+
+.participation-actions span {
+
+    display: block;
+
+    color:
+        var(--culture-text-light);
+
+    font-size: 11px;
+
+}
+
+
+.participation-actions a > i:last-child {
+
+    color:
+        var(--culture-primary);
+
+}
+
+
+/* =========================================================
+   TURIS-IA
+========================================================= */
+
+.culture-ai {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        120px 0;
+
+    background:
+        var(--culture-primary);
+
+    color: white;
+
+}
+
+
+.culture-ai-container {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr .8fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+
+.culture-ai-content > span {
+
+    color:
+        var(--culture-accent-light);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: .18em;
+
+}
+
+
+.culture-ai-content h2 {
+
+    max-width: 650px;
+
+    margin-top: 18px;
+
+    font-family:
+        "Manrope";
+
+    font-size:
+        clamp(42px, 5vw, 68px);
+
+    line-height: 1.03;
+
+    letter-spacing: -.055em;
+
+}
+
+
+.culture-ai-content h2 em {
+
+    color:
+        var(--culture-accent-light);
+
+    font-family:
+        "Playfair Display";
+
+    font-weight: 500;
+
+}
+
+
+.culture-ai-content p {
+
+    max-width: 570px;
+
+    margin-top: 25px;
+
+    color:
+        rgba(255,255,255,.67);
+
+    font-size: 15px;
+
+}
+
+
+.culture-ai-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+
+    padding:
+        14px 20px;
+
+    border-radius: 100px;
+
+    background:
+        white;
+
+    color:
+        var(--culture-primary);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.culture-ai-link:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.15);
+
+}
+
+
+/* =========================================================
+   ORBITAL IA
+========================================================= */
+
+.culture-ai-orbit {
+
+    position: relative;
+
+    width: 390px;
+
+    height: 390px;
+
+    margin: auto;
+
+    border:
+        1px solid rgba(255,255,255,.20);
+
+    border-radius: 50%;
+
+}
+
+
+.culture-ai-orbit::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 45px;
+
+    border:
+        1px dashed rgba(255,255,255,.20);
+
+    border-radius: 50%;
+
+}
+
+
+.culture-ai-orbit::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 95px;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    border-radius: 50%;
+
+}
+
+
+.culture-orbit-center {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    width: 90px;
+
+    height: 90px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        white;
+
+    color:
+        var(--culture-primary);
+
+    font-size: 25px;
+
+    box-shadow:
+        0 0 60px rgba(255,255,255,.15);
+
+}
+
+
+.culture-ai-orbit span {
+
+    position: absolute;
+
+    padding:
+        9px 13px;
+
+    border:
+        1px solid rgba(255,255,255,.18);
+
+    border-radius: 100px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: .1em;
+
+}
+
+
+.orbit-culture-one {
+
+    top: 25px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+}
+
+
+.orbit-culture-two {
+
+    right: 0;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+}
+
+
+.orbit-culture-three {
+
+    bottom: 25px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+}
+
+
+.orbit-culture-four {
+
+    left: 0;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+}
+
+
+/* =========================================================
+   DECORACIÓN IA
+========================================================= */
+
+.culture-ai-decoration {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+}
+
+
+.culture-ai-decoration span {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+}
+
+
+.culture-ai-decoration span:nth-child(1) {
+
+    width: 500px;
+
+    height: 500px;
+
+    right: -250px;
+
+    top: -200px;
+
+}
+
+
+.culture-ai-decoration span:nth-child(2) {
+
+    width: 700px;
+
+    height: 700px;
+
+    right: -350px;
+
+    top: -300px;
+
+}
+
+
+.culture-ai-decoration span:nth-child(3) {
+
+    width: 900px;
+
+    height: 900px;
+
+    right: -450px;
+
+    top: -400px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.culture-footer {
+
+    background:
+        #091f1e;
+
+    color:
+        white;
+
+}
+
+
+.culture-footer-container {
+
+    width: min(
+        1180px,
+        calc(100% - 48px)
+    );
+
+    margin: auto;
+
+    padding:
+        75px 0;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap: 60px;
+
+}
+
+
+.culture-footer-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-family:
+        "Manrope";
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+}
+
+
+.culture-footer-logo i {
+
+    color:
+        var(--culture-accent-light);
+
+}
+
+
+.culture-footer-logo span {
+
+    color:
+        var(--culture-accent-light);
+
+}
+
+
+.culture-footer-brand p {
+
+    max-width: 330px;
+
+    margin-top: 18px;
+
+    color:
+        rgba(255,255,255,.45);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+.culture-footer-social {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+}
+
+
+.culture-footer-social a {
+
+    width: 34px;
+
+    height: 34px;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    border-radius: 50%;
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size: 12px;
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.culture-footer-social a:hover {
+
+    background:
+        var(--culture-primary);
+
+    color: white;
+
+    border-color:
+        var(--culture-primary);
+
+}
+
+
+.culture-footer-column h3 {
+
+    margin-bottom: 20px;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+}
+
+
+.culture-footer-column ul {
+
+    list-style: none;
+
+}
+
+
+.culture-footer-column li {
+
+    margin-bottom: 10px;
+
+}
+
+
+.culture-footer-column a {
+
+    color:
+        rgba(255,255,255,.43);
+
+    font-size: 11px;
+
+    transition:
+        var(--culture-transition);
+
+}
+
+
+.culture-footer-column a:hover {
+
+    color:
+        white;
+
+}
+
+
+.culture-footer-bottom {
+
+    width: min(
+        1180px,
+        calc(100% - 48px)
+    );
+
+    margin: auto;
+
+    padding:
+        20px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-top:
+        1px solid rgba(255,255,255,.08);
+
+    color:
+        rgba(255,255,255,.30);
+
+    font-size: 10px;
+
+}
+
+
+/* =========================================================
+   ANIMACIONES DE APARICIÓN
+========================================================= */
+
+.culture-hidden {
+
+    opacity: 0;
+
+    transform:
+        translateY(25px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+
+}
+
+
+.culture-visible {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE · TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+
+    .culture-nav {
+
+        gap: 15px;
+
+    }
+
+
+    .culture-nav li a {
+
+        font-size: 11px;
+
+    }
+
+
+    .culture-introduction {
+
+        grid-template-columns:
+            50px 1fr;
+
+    }
+
+
+    .culture-intro-card {
+
+        grid-column: 2;
+
+        max-width: 450px;
+
+    }
+
+
+    .culture-map-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .tradition-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .tradition-card.large {
+
+        grid-column:
+            1 / -1;
+
+    }
+
+
+    .culture-dances-grid,
+    .clothing-grid {
+
+        gap: 50px;
+
+    }
+
+
+    .culture-ai-container {
+
+        gap: 30px;
+
+    }
+
+
+}
+
+
+/* =========================================================
+   RESPONSIVE · TABLET PEQUEÑA
+========================================================= */
+
+@media (max-width: 850px) {
+
+
+    .culture-topbar {
+
+        display: none;
+
+    }
+
+
+    .culture-header {
+
+        top: 0;
+
+    }
+
+
+    .culture-navbar {
+
+        width:
+            calc(100% - 30px);
+
+        min-height: 70px;
+
+    }
+
+
+    .culture-nav {
+
+        display: none;
+
+    }
+
+
+    .culture-hero {
+
+        min-height: 760px;
+
+    }
+
+
+    .culture-hero-content {
+
+        width:
+            calc(100% - 40px);
+
+    }
+
+
+    .culture-hero h1 {
+
+        font-size:
+            clamp(47px, 12vw, 75px);
+
+    }
+
+
+    .culture-hero-description {
+
+        font-size: 15px;
+
+    }
+
+
+    .culture-hero-facts {
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+    }
+
+
+    .culture-hero-fact {
+
+        min-width: 130px;
+
+        border: none;
+
+    }
+
+
+    .culture-introduction {
+
+        padding:
+            90px 0;
+
+        grid-template-columns:
+            1fr;
+
+        gap: 25px;
+
+    }
+
+
+    .culture-section-number {
+
+        display: none;
+
+    }
+
+
+    .culture-intro-card {
+
+        grid-column: auto;
+
+    }
+
+
+    .culture-map-section,
+    .culture-traditions,
+    .culture-dances,
+    .culture-food,
+    .culture-clothing,
+    .culture-heritage,
+    .living-culture {
+
+        padding:
+            90px 0;
+
+    }
+
+
+    .culture-dances-grid,
+    .clothing-grid,
+    .culture-memory-container,
+    .participation-grid,
+    .culture-ai-container {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .culture-dances-image,
+    .clothing-image {
+
+        height: 450px;
+
+    }
+
+
+    .culture-memory-container {
+
+        gap: 45px;
+
+    }
+
+
+    .culture-ai-orbit {
+
+        width: 320px;
+
+        height: 320px;
+
+    }
+
+
+    .living-culture-flow {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+
+    .living-line {
+
+        width: 1px;
+
+        height: 30px;
+
+    }
+
+
+    .culture-footer-container {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 40px;
+
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE · MÓVIL
+========================================================= */
+
+@media (max-width: 600px) {
+
+
+    .culture-container {
+
+        width:
+            calc(100% - 32px);
+
+    }
+
+
+    .culture-topbar-inner {
+
+        width:
+            calc(100% - 32px);
+
+    }
+
+
+    .culture-navbar {
+
+        width:
+            calc(100% - 28px);
+
+    }
+
+
+    .culture-logo {
+
+        font-size: 17px;
+
+    }
+
+
+    .culture-logo-mark {
+
+        width: 34px;
+
+        height: 34px;
+
+    }
+
+
+    .culture-hero {
+
+        min-height: 720px;
+
+    }
+
+
+    .culture-hero-content {
+
+        width:
+            calc(100% - 32px);
+
+    }
+
+
+    .culture-hero h1 {
+
+        font-size: 49px;
+
+    }
+
+
+    .culture-hero-description {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+
+    .culture-hero-actions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .culture-button {
+
+        width: 100%;
+
+    }
+
+
+    .culture-hero-facts {
+
+        margin-top: 45px;
+
+    }
+
+
+    .culture-hero-fact {
+
+        min-width: 45%;
+
+        padding-top: 12px;
+
+    }
+
+
+    .culture-scroll {
+
+        display: none;
+
+    }
+
+
+    .culture-introduction {
+
+        width:
+            calc(100% - 32px);
+
+        padding:
+            75px 0;
+
+    }
+
+
+    .culture-intro-main h2,
+    .culture-dances-content h2,
+    .clothing-content h2,
+    .memory-culture-content h2,
+    .participation-content h2,
+    .culture-ai-content h2 {
+
+        font-size:
+            42px;
+
+    }
+
+
+    .culture-intro-columns {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .culture-map-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .culture-heading.centered {
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .tradition-grid,
+    .food-grid,
+    .heritage-culture-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .tradition-card.large {
+
+        grid-column:
+            auto;
+
+    }
+
+
+    .tradition-card {
+
+        min-height:
+            330px;
+
+    }
+
+
+    .culture-dances-grid,
+    .clothing-grid {
+
+        gap: 40px;
+
+    }
+
+
+    .culture-dances-image,
+    .clothing-image {
+
+        height: 380px;
+
+    }
+
+
+    .culture-dance-features {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .clothing-list {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .heritage-culture-card {
+
+        min-height:
+            320px;
+
+    }
+
+
+    .culture-memory {
+
+        min-height:
+            760px;
+
+    }
+
+
+    .memory-culture-card {
+
+        padding:
+            30px;
+
+    }
+
+
+    .memory-culture-card blockquote {
+
+        font-size:
+            24px;
+
+    }
+
+
+    .culture-ai {
+
+        padding:
+            90px 0;
+
+    }
+
+
+    .culture-ai-orbit {
+
+        width:
+            280px;
+
+        height:
+            280px;
+
+    }
+
+
+    .culture-ai-orbit::before {
+
+        inset:
+            32px;
+
+    }
+
+
+    .culture-ai-orbit::after {
+
+        inset:
+            65px;
+
+    }
+
+
+    .culture-orbit-center {
+
+        width:
+            70px;
+
+        height:
+            70px;
+
+    }
+
+
+    .culture-footer-container {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 35px;
+
+        padding:
+            60px 0;
+
+    }
+
+
+    .culture-footer-bottom {
+
+        flex-direction:
+            column;
+
+        gap: 8px;
+
+    }
+
+
+}
+
+
+/* =========================================================
+   REDUCIR MOVIMIENTO
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            .01ms !important;
+
+        scroll-behavior:
+            auto !important;
+
+    }
+
+}

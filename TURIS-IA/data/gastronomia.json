@@ -1,0 +1,11 @@
+[
+  {
+    "id": "gastronomia-local",
+    "nombre": "Gastronomía tradicional de San Bartolomé",
+    "descripcion": "Sección destinada a recopilar platos, productos y preparaciones representativas de la localidad.",
+    "categorias": [
+      "comida tradicional",
+      "productos locales"
+    ]
+  }
+]

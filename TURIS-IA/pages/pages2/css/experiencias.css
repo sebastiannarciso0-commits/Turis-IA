@@ -1,0 +1,3244 @@
+/* =========================================================
+   TURIS-IA
+   EXPERIENCIAS
+   SAN BARTOLOMÉ - HUAROCHIRÍ
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --exp-primary: #0f766e;
+    --exp-primary-dark: #095c56;
+    --exp-primary-light: #e2f3f0;
+
+    --exp-gold: #c99a5a;
+    --exp-gold-light: #f1e3ce;
+
+    --exp-dark: #0a2521;
+    --exp-dark-2: #123b35;
+
+    --exp-text: #263b37;
+    --exp-text-light: #72817d;
+
+    --exp-white: #ffffff;
+    --exp-light: #f5f8f7;
+    --exp-light-2: #edf3f1;
+
+    --exp-border: #dce7e4;
+
+    --exp-shadow:
+        0 20px 60px rgba(10, 40, 35, .08);
+
+    --exp-shadow-hover:
+        0 30px 70px rgba(10, 40, 35, .15);
+
+    --exp-container: 1240px;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    color: var(--exp-text);
+
+    background:
+        var(--exp-white);
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+img {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+
+button {
+
+    font-family: inherit;
+
+}
+
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.exp-container {
+
+    width:
+        min(
+            var(--exp-container),
+            calc(100% - 80px)
+        );
+
+    margin:
+        0 auto;
+
+}
+
+
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.exp-topbar {
+
+    height: 38px;
+
+    background:
+        var(--exp-dark);
+
+    color:
+        rgba(255,255,255,.65);
+
+    font-size: 10px;
+
+}
+
+
+.exp-topbar-content {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.exp-topbar-content span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.exp-topbar i {
+
+    color:
+        #70d3c9;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.exp-header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background:
+        rgba(255,255,255,.96);
+
+    backdrop-filter:
+        blur(15px);
+
+    border-bottom:
+        1px solid rgba(0,0,0,.04);
+
+    box-shadow:
+        0 5px 25px rgba(0,0,0,.035);
+
+}
+
+
+.exp-navbar {
+
+    min-height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.exp-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    letter-spacing: -.8px;
+
+}
+
+
+.exp-logo-icon {
+
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 12px;
+
+    background:
+        var(--exp-primary);
+
+    color:
+        white;
+
+}
+
+
+.exp-logo > span:last-child span {
+
+    color:
+        var(--exp-primary);
+
+}
+
+
+/* =========================================================
+   NAV
+========================================================= */
+
+.exp-nav {
+
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+
+}
+
+
+.exp-nav a {
+
+    position: relative;
+
+    color:
+        #52625e;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    transition:
+        .25s ease;
+
+}
+
+
+.exp-nav a:hover {
+
+    color:
+        var(--exp-primary);
+
+}
+
+
+.exp-nav-ai {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding:
+        11px 16px;
+
+    border-radius: 11px;
+
+    background:
+        var(--exp-dark);
+
+    color:
+        white !important;
+
+}
+
+
+.exp-nav-ai:hover {
+
+    background:
+        var(--exp-primary);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.exp-nav-ai i {
+
+    color:
+        #70d3c9;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.exp-hero {
+
+    position: relative;
+
+    min-height: 700px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    color:
+        white;
+
+    background:
+        #0b2925;
+
+}
+
+
+/* =========================================================
+   HERO BACKGROUND
+========================================================= */
+
+.exp-hero-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5,25,22,.96) 0%,
+            rgba(5,25,22,.82) 35%,
+            rgba(5,25,22,.45) 65%,
+            rgba(5,25,22,.75) 100%
+        ),
+        url("../images/experiencias/hero.jpg")
+        center / cover no-repeat;
+
+    transform:
+        scale(1.02);
+
+}
+
+
+/* =========================================================
+   DECORACIÓN HERO
+========================================================= */
+
+.exp-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    right: -400px;
+    top: -300px;
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    border-radius:
+        50%;
+
+}
+
+
+.exp-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 550px;
+    height: 550px;
+
+    left: -400px;
+    bottom: -350px;
+
+    border:
+        1px solid rgba(255,255,255,.05);
+
+    border-radius:
+        50%;
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.exp-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding:
+        110px 0;
+
+}
+
+
+.exp-hero-label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom:
+        23px;
+
+    color:
+        #78d7ce;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.exp-hero-label span {
+
+    width: 30px;
+    height: 2px;
+
+    background:
+        #78d7ce;
+
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.exp-hero h1 {
+
+    max-width:
+        850px;
+
+    margin-bottom:
+        27px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(
+            48px,
+            6vw,
+            80px
+        );
+
+    line-height:
+        .98;
+
+    letter-spacing:
+        -4px;
+
+    font-weight:
+        800;
+
+}
+
+
+.exp-hero h1 em {
+
+    display:
+        block;
+
+    color:
+        #d7b67a;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-weight:
+        500;
+
+    letter-spacing:
+        -2px;
+
+}
+
+
+.exp-hero h1 strong {
+
+    display:
+        block;
+
+    font-weight:
+        800;
+
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.exp-hero-content > p {
+
+    max-width:
+        630px;
+
+    margin-bottom:
+        35px;
+
+    color:
+        rgba(255,255,255,.68);
+
+    font-size:
+        15px;
+
+    line-height:
+        1.85;
+
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.exp-hero-buttons {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        12px;
+
+}
+
+
+.exp-btn-primary,
+.exp-btn-secondary {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        9px;
+
+    padding:
+        14px 20px;
+
+    border-radius:
+        11px;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.exp-btn-primary {
+
+    background:
+        white;
+
+    color:
+        var(--exp-dark);
+
+}
+
+
+.exp-btn-primary:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.2);
+
+}
+
+
+.exp-btn-secondary {
+
+    border:
+        1px solid rgba(255,255,255,.18);
+
+    background:
+        rgba(255,255,255,.05);
+
+    color:
+        white;
+
+}
+
+
+.exp-btn-secondary:hover {
+
+    background:
+        rgba(255,255,255,.1);
+
+    border-color:
+        rgba(255,255,255,.35);
+
+}
+
+
+.exp-btn-secondary i {
+
+    color:
+        #78d7ce;
+
+}
+
+
+/* =========================================================
+   HERO NOTE
+========================================================= */
+
+.exp-hero-note {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    margin-top:
+        25px;
+
+    color:
+        rgba(255,255,255,.38);
+
+    font-size:
+        9px;
+
+}
+
+
+.exp-hero-note i {
+
+    color:
+        #70d3c9;
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.exp-intro {
+
+    padding:
+        110px 0;
+
+    background:
+        white;
+
+}
+
+
+.exp-intro-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        90px;
+
+    align-items:
+        center;
+
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.exp-section-label {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    margin-bottom:
+        17px;
+
+    color:
+        var(--exp-primary);
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.exp-section-label span {
+
+    width:
+        28px;
+
+    height:
+        2px;
+
+    background:
+        var(--exp-primary);
+
+}
+
+
+/* =========================================================
+   INTRO TITLE
+========================================================= */
+
+.exp-intro h2 {
+
+    max-width:
+        580px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    color:
+        var(--exp-dark);
+
+    font-size:
+        clamp(
+            38px,
+            4vw,
+            58px
+        );
+
+    line-height:
+        1.02;
+
+    letter-spacing:
+        -3px;
+
+}
+
+
+.exp-intro h2 em {
+
+    color:
+        var(--exp-primary);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-weight:
+        500;
+
+    letter-spacing:
+        -1px;
+
+}
+
+
+.exp-intro-grid > div:last-child {
+
+    padding-top:
+        15px;
+
+}
+
+
+.exp-intro-grid p {
+
+    margin-bottom:
+        18px;
+
+    color:
+        var(--exp-text-light);
+
+    font-size:
+        14px;
+
+    line-height:
+        1.9;
+
+}
+
+
+.exp-intro-grid p:last-child {
+
+    margin-bottom:
+        0;
+
+}
+
+
+/* =========================================================
+   EXPERIENCES SECTION
+========================================================= */
+
+.exp-experiences {
+
+    padding:
+        110px 0 130px;
+
+    background:
+        var(--exp-light);
+
+}
+
+
+.exp-heading {
+
+    max-width:
+        720px;
+
+    margin-bottom:
+        55px;
+
+}
+
+
+.exp-heading h2 {
+
+    margin-bottom:
+        18px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    color:
+        var(--exp-dark);
+
+    font-size:
+        clamp(
+            38px,
+            4.5vw,
+            60px
+        );
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -3px;
+
+}
+
+
+.exp-heading h2 em {
+
+    color:
+        var(--exp-primary);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-weight:
+        500;
+
+}
+
+
+.exp-heading p {
+
+    max-width:
+        580px;
+
+    color:
+        var(--exp-text-light);
+
+    font-size:
+        14px;
+
+}
+
+
+/* =========================================================
+   EXPERIENCE GRID
+========================================================= */
+
+.exp-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        22px;
+
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.exp-card {
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid var(--exp-border);
+
+    border-radius:
+        22px;
+
+    background:
+        white;
+
+    box-shadow:
+        0 10px 40px rgba(10,40,35,.035);
+
+    transition:
+        .4s ease;
+
+}
+
+
+.exp-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        var(--exp-shadow-hover);
+
+}
+
+
+/* =========================================================
+   LARGE CARD
+========================================================= */
+
+.exp-card-large {
+
+    grid-row:
+        span 2;
+
+}
+
+
+.exp-card-large .exp-card-image {
+
+    height:
+        430px;
+
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.exp-card-image {
+
+    position:
+        relative;
+
+    height:
+        270px;
+
+    overflow:
+        hidden;
+
+    background:
+        #dce8e5;
+
+}
+
+
+.exp-card-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+    transition:
+        transform .7s ease;
+
+}
+
+
+.exp-card:hover
+.exp-card-image img {
+
+    transform:
+        scale(1.07);
+
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.exp-card-image::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 45%,
+            rgba(0,0,0,.55)
+        );
+
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.exp-card-number {
+
+    position:
+        absolute;
+
+    top:
+        18px;
+
+    left:
+        18px;
+
+    z-index:
+        2;
+
+    width:
+        38px;
+
+    height:
+        38px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border:
+        1px solid rgba(255,255,255,.25);
+
+    border-radius:
+        10px;
+
+    background:
+        rgba(0,0,0,.25);
+
+    backdrop-filter:
+        blur(8px);
+
+    color:
+        white;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+}
+
+
+/* =========================================================
+   TAG
+========================================================= */
+
+.exp-card-tag {
+
+    position:
+        absolute;
+
+    z-index:
+        3;
+
+    left:
+        18px;
+
+    bottom:
+        18px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        7px;
+
+    padding:
+        8px 11px;
+
+    border-radius:
+        50px;
+
+    background:
+        rgba(255,255,255,.92);
+
+    color:
+        var(--exp-primary);
+
+    font-size:
+        8px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+.exp-card-tag i {
+
+    font-size:
+        9px;
+
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.exp-card-content {
+
+    padding:
+        25px 27px 28px;
+
+}
+
+
+.exp-card-content > span {
+
+    display:
+        block;
+
+    margin-bottom:
+        8px;
+
+    color:
+        var(--exp-gold);
+
+    font-size:
+        8px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1.6px;
+
+}
+
+
+.exp-card-content h3 {
+
+    margin-bottom:
+        10px;
+
+    color:
+        var(--exp-dark);
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        21px;
+
+    line-height:
+        1.2;
+
+}
+
+
+.exp-card-content p {
+
+    min-height:
+        63px;
+
+    margin-bottom:
+        20px;
+
+    color:
+        var(--exp-text-light);
+
+    font-size:
+        11px;
+
+    line-height:
+        1.75;
+
+}
+
+
+.exp-card-content a {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    color:
+        var(--exp-primary);
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+}
+
+
+.exp-card-content a i {
+
+    transition:
+        .25s ease;
+
+}
+
+
+.exp-card-content a:hover i {
+
+    transform:
+        translateX(5px);
+
+}
+
+
+/* =========================================================
+   DARK AI CARD
+========================================================= */
+
+.exp-card-dark {
+
+    position:
+        relative;
+
+    min-height:
+        100%;
+
+    border:
+        none;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--exp-dark),
+            #155047
+        );
+
+    color:
+        white;
+
+}
+
+
+.exp-card-dark::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        300px;
+
+    height:
+        300px;
+
+    right:
+        -160px;
+
+    top:
+        -140px;
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    border-radius:
+        50%;
+
+}
+
+
+.exp-card-dark-content {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    height:
+        100%;
+
+    min-height:
+        270px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        flex-start;
+
+    justify-content:
+        center;
+
+    padding:
+        35px;
+
+}
+
+
+.exp-card-icon {
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    margin-bottom:
+        25px;
+
+    border-radius:
+        13px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    color:
+        #76d5cb;
+
+}
+
+
+.exp-card-dark-content > span {
+
+    margin-bottom:
+        10px;
+
+    color:
+        #75d2c9;
+
+    font-size:
+        8px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1.5px;
+
+}
+
+
+.exp-card-dark h3 {
+
+    max-width:
+        320px;
+
+    margin-bottom:
+        13px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        23px;
+
+    line-height:
+        1.15;
+
+}
+
+
+.exp-card-dark p {
+
+    max-width:
+        390px;
+
+    margin-bottom:
+        22px;
+
+    color:
+        rgba(255,255,255,.5);
+
+    font-size:
+        11px;
+
+    line-height:
+        1.75;
+
+}
+
+
+.exp-card-dark a {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    color:
+        white;
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+}
+
+
+.exp-card-dark a i {
+
+    color:
+        #70d3c9;
+
+    transition:
+        .25s ease;
+
+}
+
+
+.exp-card-dark a:hover i {
+
+    transform:
+        translateX(5px);
+
+}
+
+
+/* =========================================================
+   FEATURED EXPERIENCE
+========================================================= */
+
+.exp-featured {
+
+    padding:
+        130px 0;
+
+    background:
+        white;
+
+}
+
+
+.exp-featured-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        85px;
+
+    align-items:
+        center;
+
+}
+
+
+/* =========================================================
+   FEATURED IMAGE
+========================================================= */
+
+.exp-featured-image {
+
+    position:
+        relative;
+
+    height:
+        600px;
+
+    overflow:
+        hidden;
+
+    border-radius:
+        24px;
+
+    background:
+        #dce8e5;
+
+}
+
+
+.exp-featured-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+    transition:
+        transform .7s ease;
+
+}
+
+
+.exp-featured-image:hover img {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+.exp-featured-caption {
+
+    position:
+        absolute;
+
+    left:
+        25px;
+
+    right:
+        25px;
+
+    bottom:
+        25px;
+
+    z-index:
+        2;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    padding:
+        14px 16px;
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    border-radius:
+        12px;
+
+    background:
+        rgba(0,0,0,.35);
+
+    backdrop-filter:
+        blur(12px);
+
+    color:
+        white;
+
+    font-size:
+        10px;
+
+}
+
+
+.exp-featured-caption i {
+
+    color:
+        #e0b66d;
+
+}
+
+
+/* =========================================================
+   FEATURED CONTENT
+========================================================= */
+
+.exp-featured-content h2 {
+
+    max-width:
+        560px;
+
+    margin-bottom:
+        22px;
+
+    color:
+        var(--exp-dark);
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(
+            38px,
+            4vw,
+            56px
+        );
+
+    line-height:
+        1.02;
+
+    letter-spacing:
+        -3px;
+
+}
+
+
+.exp-featured-content h2 em {
+
+    color:
+        var(--exp-primary);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-weight:
+        500;
+
+}
+
+
+.exp-featured-content > p {
+
+    max-width:
+        570px;
+
+    margin-bottom:
+        30px;
+
+    color:
+        var(--exp-text-light);
+
+    font-size:
+        14px;
+
+    line-height:
+        1.9;
+
+}
+
+
+/* =========================================================
+   FEATURED LIST
+========================================================= */
+
+.exp-featured-list {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        12px;
+
+    margin-bottom:
+        32px;
+
+}
+
+
+.exp-featured-list div {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    color:
+        var(--exp-text);
+
+    font-size:
+        10px;
+
+    font-weight:
+        600;
+
+}
+
+
+.exp-featured-list i {
+
+    width:
+        21px;
+
+    height:
+        21px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--exp-primary-light);
+
+    color:
+        var(--exp-primary);
+
+    font-size:
+        8px;
+
+}
+
+
+/* =========================================================
+   OUTLINE BUTTON
+========================================================= */
+
+.exp-outline-button {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    padding:
+        13px 18px;
+
+    border:
+        1px solid var(--exp-border);
+
+    border-radius:
+        10px;
+
+    color:
+        var(--exp-dark);
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.exp-outline-button:hover {
+
+    border-color:
+        var(--exp-primary);
+
+    color:
+        var(--exp-primary);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.exp-outline-button i {
+
+    transition:
+        .25s ease;
+
+}
+
+
+.exp-outline-button:hover i {
+
+    transform:
+        translateX(5px);
+
+}
+
+
+/* =========================================================
+   RESPONSIBLE TOURISM
+========================================================= */
+
+.exp-responsible {
+
+    padding:
+        0 0 110px;
+
+    background:
+        white;
+
+}
+
+
+.exp-responsible-box {
+
+    position:
+        relative;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        70px 1fr auto;
+
+    align-items:
+        center;
+
+    gap:
+        25px;
+
+    padding:
+        35px 40px;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid #d8e8e4;
+
+    border-radius:
+        20px;
+
+    background:
+        var(--exp-primary-light);
+
+}
+
+
+.exp-responsible-box::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        300px;
+
+    height:
+        300px;
+
+    right:
+        -170px;
+
+    top:
+        -180px;
+
+    border:
+        1px solid rgba(15,118,110,.08);
+
+    border-radius:
+        50%;
+
+}
+
+
+.exp-responsible-icon {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    width:
+        62px;
+
+    height:
+        62px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        16px;
+
+    background:
+        white;
+
+    color:
+        var(--exp-primary);
+
+    font-size:
+        20px;
+
+    box-shadow:
+        0 10px 30px rgba(15,118,110,.08);
+
+}
+
+
+.exp-responsible-box > div:nth-child(2) {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+}
+
+
+.exp-responsible-box span {
+
+    display:
+        block;
+
+    margin-bottom:
+        5px;
+
+    color:
+        var(--exp-primary);
+
+    font-size:
+        8px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1.6px;
+
+}
+
+
+.exp-responsible-box h2 {
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--exp-dark);
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        23px;
+
+}
+
+
+.exp-responsible-box p {
+
+    max-width:
+        650px;
+
+    color:
+        var(--exp-text-light);
+
+    font-size:
+        11px;
+
+    line-height:
+        1.7;
+
+}
+
+
+.exp-responsible-box > a {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    padding:
+        12px 16px;
+
+    border:
+        1px solid rgba(15,118,110,.2);
+
+    border-radius:
+        10px;
+
+    color:
+        var(--exp-primary);
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+    white-space:
+        nowrap;
+
+    transition:
+        .25s ease;
+
+}
+
+
+.exp-responsible-box > a:hover {
+
+    background:
+        var(--exp-primary);
+
+    color:
+        white;
+
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.exp-cta {
+
+    position:
+        relative;
+
+    padding:
+        115px 0;
+
+    overflow:
+        hidden;
+
+    background:
+        linear-gradient(
+            130deg,
+            #09221f,
+            #154b43
+        );
+
+    color:
+        white;
+
+}
+
+
+.exp-cta::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        650px;
+
+    height:
+        650px;
+
+    right:
+        -400px;
+
+    top:
+        -350px;
+
+    border:
+        1px solid rgba(255,255,255,.06);
+
+    border-radius:
+        50%;
+
+}
+
+
+.exp-cta::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        500px;
+
+    height:
+        500px;
+
+    left:
+        -350px;
+
+    bottom:
+        -350px;
+
+    border:
+        1px solid rgba(255,255,255,.05);
+
+    border-radius:
+        50%;
+
+}
+
+
+.exp-cta-content {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    text-align:
+        center;
+
+}
+
+
+.exp-cta-icon {
+
+    width:
+        58px;
+
+    height:
+        58px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    margin:
+        0 auto 23px;
+
+    border:
+        1px solid rgba(255,255,255,.12);
+
+    border-radius:
+        16px;
+
+    background:
+        rgba(255,255,255,.05);
+
+    color:
+        #75d3ca;
+
+}
+
+
+.exp-cta h2 {
+
+    max-width:
+        750px;
+
+    margin:
+        0 auto 17px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(
+            38px,
+            5vw,
+            60px
+        );
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -3px;
+
+}
+
+
+.exp-cta p {
+
+    max-width:
+        550px;
+
+    margin:
+        0 auto 30px;
+
+    color:
+        rgba(255,255,255,.52);
+
+    font-size:
+        13px;
+
+}
+
+
+.exp-cta-buttons {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        10px;
+
+}
+
+
+/* =========================================================
+   CTA BUTTONS
+========================================================= */
+
+.exp-btn-light,
+.exp-btn-transparent {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        9px;
+
+    padding:
+        14px 20px;
+
+    border-radius:
+        11px;
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+    transition:
+        .3s ease;
+
+}
+
+
+.exp-btn-light {
+
+    background:
+        white;
+
+    color:
+        var(--exp-dark);
+
+}
+
+
+.exp-btn-light:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.2);
+
+}
+
+
+.exp-btn-transparent {
+
+    border:
+        1px solid rgba(255,255,255,.16);
+
+    background:
+        rgba(255,255,255,.04);
+
+    color:
+        white;
+
+}
+
+
+.exp-btn-transparent:hover {
+
+    background:
+        rgba(255,255,255,.1);
+
+}
+
+
+.exp-btn-transparent i {
+
+    color:
+        #73d2c8;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.exp-footer {
+
+    padding:
+        70px 0 0;
+
+    background:
+        #071613;
+
+    color:
+        white;
+
+}
+
+
+.exp-footer-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.7fr
+        1fr
+        1fr
+        1fr;
+
+    gap:
+        60px;
+
+    padding-bottom:
+        60px;
+
+}
+
+
+/* =========================================================
+   FOOTER BRAND
+========================================================= */
+
+.exp-footer-brand {
+
+    max-width:
+        310px;
+
+}
+
+
+.exp-footer-logo {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    margin-bottom:
+        18px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        21px;
+
+    font-weight:
+        800;
+
+}
+
+
+.exp-footer-logo i {
+
+    color:
+        #70d3c9;
+
+}
+
+
+.exp-footer-logo span {
+
+    color:
+        #70d3c9;
+
+}
+
+
+.exp-footer-brand p {
+
+    color:
+        rgba(255,255,255,.42);
+
+    font-size:
+        11px;
+
+    line-height:
+        1.8;
+
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.exp-footer-column {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        11px;
+
+}
+
+
+.exp-footer-column h3 {
+
+    margin-bottom:
+        8px;
+
+    color:
+        white;
+
+    font-size:
+        9px;
+
+    letter-spacing:
+        1.7px;
+
+}
+
+
+.exp-footer-column a {
+
+    width:
+        fit-content;
+
+    color:
+        rgba(255,255,255,.42);
+
+    font-size:
+        11px;
+
+    transition:
+        .25s ease;
+
+}
+
+
+.exp-footer-column a:hover {
+
+    color:
+        #70d3c9;
+
+    transform:
+        translateX(3px);
+
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.exp-footer-bottom {
+
+    min-height:
+        70px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    border-top:
+        1px solid rgba(255,255,255,.07);
+
+    color:
+        rgba(255,255,255,.27);
+
+    font-size:
+        9px;
+
+}
+
+
+/* =========================================================
+   ANIMACIÓN
+========================================================= */
+
+@keyframes expFadeUp {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(20px);
+
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+.exp-hero-content {
+
+    animation:
+        expFadeUp .9s ease both;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+
+    .exp-nav {
+
+        gap:
+            14px;
+
+    }
+
+
+    .exp-grid {
+
+        gap:
+            17px;
+
+    }
+
+
+    .exp-featured-grid {
+
+        gap:
+            50px;
+
+    }
+
+
+    .exp-footer-grid {
+
+        gap:
+            35px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET PEQUEÑA
+========================================================= */
+
+@media (max-width: 850px) {
+
+
+    .exp-container {
+
+        width:
+            calc(100% - 45px);
+
+    }
+
+
+    .exp-nav {
+
+        display:
+            none;
+
+    }
+
+
+    .exp-navbar {
+
+        min-height:
+            72px;
+
+    }
+
+
+    .exp-hero {
+
+        min-height:
+            650px;
+
+    }
+
+
+    .exp-intro-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            30px;
+
+    }
+
+
+    .exp-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .exp-card-large {
+
+        grid-row:
+            auto;
+
+    }
+
+
+    .exp-card-large
+    .exp-card-image {
+
+        height:
+            330px;
+
+    }
+
+
+    .exp-featured-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .exp-featured-image {
+
+        height:
+            480px;
+
+    }
+
+
+    .exp-responsible-box {
+
+        grid-template-columns:
+            60px 1fr;
+
+    }
+
+
+    .exp-responsible-box > a {
+
+        grid-column:
+            2;
+
+        width:
+            fit-content;
+
+    }
+
+
+    .exp-footer-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 600px) {
+
+
+    .exp-container {
+
+        width:
+            calc(100% - 30px);
+
+    }
+
+
+    .exp-topbar {
+
+        height:
+            auto;
+
+        padding:
+            9px 0;
+
+    }
+
+
+    .exp-topbar-content {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap:
+            4px;
+
+    }
+
+
+    .exp-logo {
+
+        font-size:
+            18px;
+
+    }
+
+
+    .exp-logo-icon {
+
+        width:
+            36px;
+
+        height:
+            36px;
+
+    }
+
+
+    .exp-hero {
+
+        min-height:
+            650px;
+
+    }
+
+
+    .exp-hero-content {
+
+        padding:
+            80px 0;
+
+    }
+
+
+    .exp-hero h1 {
+
+        font-size:
+            47px;
+
+        letter-spacing:
+            -2px;
+
+    }
+
+
+    .exp-hero-content > p {
+
+        font-size:
+            13px;
+
+    }
+
+
+    .exp-hero-buttons {
+
+        align-items:
+            stretch;
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .exp-btn-primary,
+    .exp-btn-secondary {
+
+        width:
+            fit-content;
+
+    }
+
+
+    .exp-intro {
+
+        padding:
+            80px 0;
+
+    }
+
+
+    .exp-intro h2 {
+
+        font-size:
+            42px;
+
+        letter-spacing:
+            -2px;
+
+    }
+
+
+    .exp-experiences {
+
+        padding:
+            80px 0 90px;
+
+    }
+
+
+    .exp-heading {
+
+        margin-bottom:
+            35px;
+
+    }
+
+
+    .exp-heading h2 {
+
+        font-size:
+            42px;
+
+        letter-spacing:
+            -2px;
+
+    }
+
+
+    .exp-card-large
+    .exp-card-image {
+
+        height:
+            280px;
+
+    }
+
+
+    .exp-card-image {
+
+        height:
+            230px;
+
+    }
+
+
+    .exp-card-content {
+
+        padding:
+            22px;
+
+    }
+
+
+    .exp-card-content h3 {
+
+        font-size:
+            19px;
+
+    }
+
+
+    .exp-card-content p {
+
+        min-height:
+            auto;
+
+    }
+
+
+    .exp-featured {
+
+        padding:
+            80px 0;
+
+    }
+
+
+    .exp-featured-image {
+
+        height:
+            400px;
+
+    }
+
+
+    .exp-featured-content h2 {
+
+        font-size:
+            42px;
+
+        letter-spacing:
+            -2px;
+
+    }
+
+
+    .exp-featured-list {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .exp-responsible {
+
+        padding-bottom:
+            80px;
+
+    }
+
+
+    .exp-responsible-box {
+
+        grid-template-columns:
+            1fr;
+
+        padding:
+            28px;
+
+    }
+
+
+    .exp-responsible-box > a {
+
+        grid-column:
+            auto;
+
+    }
+
+
+    .exp-cta {
+
+        padding:
+            85px 0;
+
+    }
+
+
+    .exp-cta h2 {
+
+        font-size:
+            42px;
+
+        letter-spacing:
+            -2px;
+
+    }
+
+
+    .exp-cta-buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .exp-btn-light,
+    .exp-btn-transparent {
+
+        width:
+            100%;
+
+    }
+
+
+    .exp-footer {
+
+        padding-top:
+            55px;
+
+    }
+
+
+    .exp-footer-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            38px;
+
+    }
+
+
+    .exp-footer-bottom {
+
+        min-height:
+            auto;
+
+        padding:
+            20px 0;
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap:
+            6px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+
+    width:
+        8px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background:
+        #edf3f1;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        var(--exp-primary);
+
+    border-radius:
+        20px;
+
+}
+
+
+/* =========================================================
+   SELECCIÓN
+========================================================= */
+
+::selection {
+
+    background:
+        var(--exp-primary);
+
+    color:
+        white;
+
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "chucuncuya",
+    "nombre": "Chucuncuya",
+    "tipo": "Sitio arqueológico",
+    "descripcion": "Atractivo arqueológico de San Bartolomé que forma parte del patrimonio cultural local.",
+    "historia": "Lugar relacionado con el patrimonio histórico y arqueológico de la localidad.",
+    "experiencia": [
+      "Conocer el patrimonio arqueológico",
+      "Observar el paisaje",
+      "Tomar fotografías",
+      "Realizar una visita cultural"
+    ],
+    "dificultad": "Media",
+    "tiempo_visita": "2 horas",
+    "recomendado_para": [
+      "familias",
+      "jóvenes",
+      "estudiantes",
+      "fotógrafos",
+      "personas interesadas en historia"
+    ],
+    "categorias": [
+      "historia",
+      "arqueologia",
+      "cultura",
+      "fotografia"
+    ]
+  },
+  {
+    "id": "plaza-san-bartolome",
+    "nombre": "Plaza Principal de San Bartolomé",
+    "tipo": "Espacio público",
+    "descripcion": "Espacio central del distrito y punto de referencia para visitantes.",
+    "historia": "La plaza forma parte de la vida social y cultural de San Bartolomé.",
+    "experiencia": [
+      "Conocer el centro del distrito",
+      "Descansar",
+      "Tomar fotografías",
+      "Observar actividades locales"
+    ],
+    "dificultad": "Fácil",
+    "tiempo_visita": "30 minutos",
+    "recomendado_para": [
+      "familias",
+      "adultos mayores",
+      "jóvenes",
+      "visitantes"
+    ],
+    "categorias": [
+      "cultura",
+      "paseo",
+      "fotografia"
+    ]
+  },
+  {
+    "id": "iglesia-san-bartolome",
+    "nombre": "Iglesia de San Bartolomé",
+    "tipo": "Patrimonio religioso",
+    "descripcion": "Templo representativo de la localidad y parte del patrimonio cultural del distrito.",
+    "historia": "La iglesia está vinculada con la tradición religiosa y cultural de San Bartolomé.",
+    "experiencia": [
+      "Conocer el patrimonio religioso",
+      "Observar la arquitectura",
+      "Conocer tradiciones locales"
+    ],
+    "dificultad": "Fácil",
+    "tiempo_visita": "40 minutos",
+    "recomendado_para": [
+      "familias",
+      "estudiantes",
+      "visitantes interesados en cultura"
+    ],
+    "categorias": [
+      "religion",
+      "cultura",
+      "historia",
+      "arquitectura"
+    ]
+  }
+]
