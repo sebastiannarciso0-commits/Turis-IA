@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="TurisIA - Descubre San Bartolomé, Huarochirí, mediante turismo inteligente."
+    >
+
+    <meta
+        name="theme-color"
+        content="#0f766e"
+    >
+
+    <title>
+        TurisIA | Descubre San Bartolomé
+    </title>
+
+
+    <!-- ==========================================
+         FUENTES
+    =========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==========================================
+         ICONOS
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- ==========================================
+         CSS
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     BARRA SUPERIOR
+=================================================== -->
+
+<div class="top-bar">
+
+    <div class="container top-bar-content">
+
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+            San Bartolomé · Huarochirí · Lima
+        </span>
+
+        <span class="top-bar-tag">
+            Turismo inteligente
+        </span>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     NAVBAR
+=================================================== -->
+
+<header class="main-header">
+
+    <div class="container navbar">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <div class="brand-icon">
+
+                <i class="fa-solid fa-compass"></i>
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>
+                    TURIS<span>IA</span>
+                </strong>
+
+                <small>
+                    SAN BARTOLOMÉ
+                </small>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- NAVEGACIÓN -->
+
+        <nav class="desktop-nav">
+
+            <a
+                href="index.html"
+                class="active"
+            >
+                Inicio
+            </a>
+
+            <a href="#descubre">
+                Descubre
+            </a>
+
+            <a href="pages/pages2/experiencias.html">
+                Experiencias
+            </a>
+
+            <a href="pages/pages2/pages3/rutasdecaminata.html">
+                Rutas
+            </a>
+
+            <a href="pages/pages2/cultura.html">
+                Cultura
+            </a>
+
+        </nav>
+
+
+
+        <!-- BOTÓN IA -->
+
+        <button
+            class="nav-ai-button"
+            onclick="abrirAsistente()"
+        >
+
+            <i class="fa-solid fa-sparkles"></i>
+
+            Hablar con TurisIA
+
+        </button>
+
+
+        <!-- MENU MOBILE -->
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Abrir menú"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==================================================
+     MENU MOBILE
+=================================================== -->
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+>
+
+    <a href="#inicio">
+        Inicio
+    </a>
+
+    <a href="#descubre">
+        Descubre
+    </a>
+
+    <a href="pages/pages2/experiencias.html">
+        Experiencias
+    </a>
+
+    <a href="pages/pages2/pages3/rutasdecaminata.html">
+        Rutas
+    </a>
+
+    <a href="pages/pages2/cultura.html">
+        Cultura
+    </a>
+
+    <button onclick="abrirAsistente()">
+
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+        Hablar con TurisIA
+
+    </button>
+
+</div>
+
+
+
+<!-- ==================================================
+     HERO
+=================================================== -->
+
+<main id="inicio">
+
+<section class="hero">
+
+
+    <!-- FONDO -->
+
+    <div class="hero-background"
+    style="background-image: url(img/San\ Bartolome.jpg);"
+    ></div>
+
+    <div class="hero-overlay"></div>
+
+
+    <!-- CONTENIDO -->
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+
+            <!-- ETIQUETA -->
+
+            <div class="hero-badge">
+
+                <span class="pulse-dot"></span>
+
+                Turismo + Inteligencia Artificial
+
+            </div>
+
+
+
+            <!-- TITULO -->
+
+            <h1>
+             Conoce e interpreta
+                <span>
+                    la historia de San Bartolomé
+                </span>
+            de una nueva manera.
+            </h1>
+
+
+
+            <!-- DESCRIPCIÓN -->
+
+            <p class="hero-description">
+
+                Explora fuentes, testimonios, patrimonio,
+                tradiciones y lugares históricos de San Bartolomé.
+                TurisIA te ayuda a comprender nuestra historia
+                y valorar nuestra identidad local.
+
+            </p>
+
+
+
+            <!-- BOTONES -->
+
+            <div class="hero-buttons">
+
+                <a
+                    href="pages/explorar ahora.html"
+                    class="primary-button"
+                >
+
+                    Explorar San Bartolomé
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+                <button
+                    class="secondary-button"
+                    onclick="abrirAsistente()"
+                >
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    Pregúntale a TurisIA
+
+                </button>
+
+            </div>
+
+
+
+            <!-- DATOS -->
+
+            <div class="hero-stats">
+
+                <div class="hero-stat">
+
+                    <strong>
+                        01
+                    </strong>
+
+                    <span>
+                        Explora
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>
+                        02
+                    </strong>
+
+                    <span>
+                        Descubre
+                    </span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>
+                        03
+                    </strong>
+
+                    <span>
+                        Vive
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TARJETA IA -->
+
+        <div class="hero-ai-card">
+
+            <div class="ai-card-top">
+
+                <div class="ai-avatar">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        TURISIA
+                    </span>
+
+                    <small>
+                        Asistente de historia local
+                    </small>
+
+                </div>
+
+                <div class="ai-status">
+
+                    <span></span>
+
+                    En línea
+
+                </div>
+
+            </div>
+
+
+            <div class="ai-card-content">
+
+                <p class="ai-question">
+
+                    ¿Qué quieres conocer de nuestra historia?
+
+                </p>
+
+
+                <div class="ai-suggestion">
+<a href="pages/pages2/cultura.html">
+    <i class="fa-solid fa-landmark"></i>
+
+    <span>
+        Patrimonio histórico
+    </span>
+
+    <i class="fa-solid fa-chevron-right"></i>
+</a>
+</div>
+
+
+<div class="ai-suggestion">
+<a href="pages/pages2/historia.html">
+    <i class="fa-solid fa-book-open"></i>
+
+    <span>
+        Historia de San Bartolomé
+    </span>
+
+    <i class="fa-solid fa-chevron-right"></i>
+</a>
+</div>
+
+
+<div class="ai-suggestion">
+<a href="pages/pages2/historia.html">
+    <i class="fa-solid fa-scroll"></i>
+
+    <span>
+        Fuentes y testimonios
+    </span>
+
+    <i class="fa-solid fa-chevron-right"></i>
+</a>
+</div>
+
+
+<div class="ai-suggestion">
+<a href="pages/pages2/cultura.html">
+    <i class="fa-solid fa-clock-rotate-left"></i>
+
+    <span>
+        San Bartolomé a través del tiempo
+    </span>
+
+    <i class="fa-solid fa-chevron-right"></i>
+</a>
+</div>
+
+            </div>
+
+
+            <button
+                class="ai-card-button"
+                onclick="abrirAsistente()"
+            >
+
+                Conversar con TurisIA
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SCROLL -->
+
+    <a
+        href="#descubre"
+        class="scroll-indicator"
+    >
+
+        <span>
+            Descubre más
+        </span>
+
+        <i class="fa-solid fa-chevron-down"></i>
+
+    </a>
+
+</section>
+
+
+
+<!-- ==================================================
+     INTRO
+=================================================== -->
+
+<section
+    class="intro-section"
+    id="descubre"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading centered">
+
+            <span class="section-label">
+                CONOCE EL DESTINO
+            </span>
+
+            <h2>
+                Un lugar por descubrir.
+            </h2>
+
+            <p>
+
+                San Bartolomé guarda paisajes,
+                tradiciones y espacios que merecen
+                ser conocidos y valorados.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- CARDS -->
+
+        <div class="destination-grid">
+
+
+            <!-- CARD 1 -->
+
+            <article class="destination-card large-card">
+
+                <div class="destination-image image-landscape"
+                style="background-image: url(
+                    img/Chucuncuya.jpeg);">
+
+
+                    <div class="image-overlay"></div>
+
+                    <span class="destination-tag">
+                        Naturaleza
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-mountain-sun"></i>
+
+                    </div>
+
+                    <h3>
+                        Paisajes que sorprenden
+                    </h3>
+
+                    <p>
+
+                        Explora los espacios naturales
+                        y las vistas que forman parte
+                        del paisaje de San Bartolomé.
+
+                    </p>
+
+                    <a href="pages/pages2/lugares.html">
+
+                        Explorar naturaleza
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 2 -->
+
+            <article class="destination-card">
+
+                <div class="destination-image image-culture"
+                style="background-image: url(img/mirador.jpg);">
+
+                    <div class="image-overlay"></div>
+
+                    <span class="destination-tag">
+                        Cultura
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-landmark"></i>
+
+                    </div>
+
+                    <h3>
+                        Historia y patrimonio
+                    </h3>
+
+                    <p>
+
+                        Conoce las historias,
+                        tradiciones y patrimonio
+                        de nuestra localidad.
+
+                    </p>
+
+                    <a href="pages/pages2/cultura.html">
+
+                        Conocer más
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- CARD 3 -->
+
+            <article class="destination-card">
+
+                <div class="destination-image image-adventure"
+                style="background-image: url(img/iglesia\ colonial.jpg);">
+
+                    <div class="image-overlay"></div>
+
+                    <span class="destination-tag">
+                        Aventura
+                    </span>
+
+                </div>
+
+                <div class="destination-content">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-person-hiking"></i>
+
+                    </div>
+
+                    <h3>
+                        Rutas y caminatas
+                    </h3>
+
+                    <p>
+
+                        Encuentra recorridos para
+                        caminar, conocer y disfrutar
+                        del entorno.
+
+                    </p>
+
+                    <a href="pages/pages2/pages3/rutasdecaminata.html">
+
+                        Ver rutas
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     EXPERIENCIAS
+=================================================== -->
+
+<section
+    class="experiences-section"
+    id="experiencias"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                EXPERIENCIAS
+            </span>
+
+            <h2>
+                Descubre nuestra historia
+    a través de diferentes experiencias.
+            </h2>
+
+            <p>
+
+                No todos viajamos de la misma forma.
+                Por eso TurisIA te ayuda a encontrar
+                experiencias según tus intereses.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="experience-grid">
+
+
+            <a
+                href="pages/pages2/historia.html"
+                class="experience-card experience-adventure"
+                style="background-image: url(pages/imga/aeventura.jpg);"
+            >
+
+                <div class="experience-number">
+                    01
+                </div>
+
+                <div class="experience-icon">
+
+                    <i class="fa-solid fa-person-hiking"></i>
+
+                </div>
+
+                <div class="experience-info">
+
+                    <span>
+                        Para curiosos
+                    </span>
+
+                    <h3>
+                        Historia 
+                    </h3>
+
+                    <p>
+                        Conoce la historia y procesos historicos de nuestra comunidad 
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-right experience-arrow"></i>
+
+            </a>
+
+
+
+            <a
+                href="pages/pages2/cultura.html"
+                class="experience-card experience-culture"
+                style="background-image: url(pages/imga/aea.jpg);"
+            >
+
+                <div class="experience-number">
+                    02
+                </div>
+
+                <div class="experience-icon">
+
+                    <i class="fa-solid fa-landmark"></i>
+
+                </div>
+
+                <div class="experience-info">
+
+                    <span>
+                        Para curiosos
+                    </span>
+
+                    <h3>
+                        Cultura
+                    </h3>
+
+                    <p>
+                        Historia, patrimonio y tradiciones.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-right experience-arrow"></i>
+
+            </a>
+
+
+
+            <a
+                href="pages/pages2/gastronomiayhoteleria.html"
+                class="experience-card experience-food"
+                style="background-image: url(pages/imga/elrocoto.jpeg);"
+            >
+
+                <div class="experience-number">
+                    03
+                </div>
+
+                <div class="experience-icon">
+
+                    <i class="fa-solid fa-utensils"></i>
+
+                </div>
+
+                <div class="experience-info">
+
+                    <span>
+                        Para disfrutar y dormir
+                    </span>
+
+                    <h3>
+                        Gastronomía y hotelería
+                    </h3>
+
+                    <p>
+                        Sabores y productos de nuestra localidad. <br>
+                        Points donde te puedas quedar
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-right experience-arrow"></i>
+
+            </a>
+
+
+
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     RUTAS
+=================================================== -->
+
+<section
+    class="routes-section"
+    id="rutas"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                EXPLORA
+            </span>
+
+            <h2>
+                Encuentra tu próxima ruta.
+            </h2>
+
+            <p>
+
+                Descubre recorridos para conocer
+                nuevos lugares y disfrutar del
+                paisaje local.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="routes-grid">
+
+
+            <article class="route-card featured-route">
+
+                <div class="route-image route-image-one"
+                style="background-image: url(pages/imga/sanba.jpeg);">
+
+                    <span class="route-level">
+                        Recomendado
+                    </span>
+
+                </div>
+
+                <div class="route-content">
+
+                    <div class="route-meta">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                            Ruta turística
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            San Bartolomé
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Explora el paisaje local
+                    </h3>
+
+                    <p>
+
+                        Una experiencia pensada para
+                        descubrir el entorno y disfrutar
+                        de sus paisajes.
+
+                    </p>
+
+                    <a href="#">
+
+                        Explorar ruta
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="route-card">
+
+                <div class="route-image route-image-two"
+                 style="background-image: url(pages/imga/fepo.jpeg)"; 
+                >
+
+                    <span class="route-level">
+                        Naturaleza
+                    </span>
+
+                </div>
+
+                <div class="route-content"
+               "
+                >
+
+                    <div class="route-meta">
+
+                        <span>
+                            <i class="fa-solid fa-person-hiking"></i>
+                            Caminata
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Ruta de aventura
+                    </h3>
+
+                    <p>
+
+                        Una opción para quienes buscan
+                        caminar y conocer el entorno.
+
+                    </p>
+
+                    <a href="pages/pages2/pages3/rutasdecaminata.html">
+
+                        Ver recorrido
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="route-card">
+
+                <div class="route-image route-image-three"
+                style="background-image: url(pages/imga/cultt.jpeg);">
+
+                    <span class="route-level">
+                        Cultura
+                    </span>
+
+                </div>
+
+                <div class="route-content">
+
+                    <div class="route-meta">
+
+                        <span>
+                            <i class="fa-solid fa-landmark"></i>
+                            Patrimonio
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Ruta cultural
+                    </h3>
+
+                    <p>
+
+                        Conoce espacios relacionados
+                        con la historia y cultura local.
+
+                    </p>
+
+                    <a href="#">
+
+                        Descubrir
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CULTURA
+=================================================== -->
+
+<section
+    class="culture-section"
+    id="cultura"
+>
+
+    <div class="culture-image"
+    style="background-image: url(pages/imga/sanbartolo.jpg);"
+    >
+
+        <div class="culture-overlay"></div>
+
+    </div>
+
+
+    <div class="culture-content">
+
+        <span class="section-label">
+            IDENTIDAD LOCAL
+        </span>
+
+        <h2>
+            Una localidad con
+            historia que contar.
+        </h2>
+
+        <p>
+
+            El turismo también es una forma
+            de valorar nuestra identidad.
+            Conoce las tradiciones, festividades
+            y patrimonio que forman parte
+            de San Bartolomé.
+
+        </p>
+
+
+        <div class="culture-links">
+
+            <a href="pages/pages2/pages3/festifivades.html">
+
+                <span>
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    Festividades
+
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="pages/pages2/cultura.html">
+
+                <span>
+
+                    <i class="fa-solid fa-landmark"></i>
+
+                    Patrimonio cultural
+
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+
+            <a href="pages/pages2/historia.html">
+
+                <span>
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                    Historia local
+
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     GASTRONOMIA
+=================================================== -->
+
+<section
+    class="food-section"
+    id="gastronomia"
+>
+
+    <div class="container food-container">
+
+
+        <div class="food-content">
+
+            <span class="section-label">
+                SABORES LOCALES
+            </span>
+
+            <h2>
+                Conoce San Bartolomé
+                también a través
+                de sus sabores.
+            </h2>
+
+            <p>
+
+                La gastronomía forma parte de
+                la experiencia de conocer una
+                localidad. Descubre productos,
+                preparaciones y sabores locales.
+
+            </p>
+
+          
+            <button class="outline-button" >
+                    <a href="pages/pages2/gastronomiayhoteleria.html">
+                        Explorar gastronomía
+
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>    
+            </button>
+
+        </div>
+
+
+        <div class="food-visual">
+
+            <div class="food-circle">
+
+                <i class="fa-solid fa-utensils"></i>
+
+            </div>
+
+            <span class="food-decoration decoration-one"></span>
+            <span class="food-decoration decoration-two"></span>
+            <span class="food-decoration decoration-three"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CTA FINAL
+=================================================== -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <div class="final-cta-box">
+
+            <div class="final-cta-content">
+
+                <span class="section-label light">
+                    TU PRÓXIMA EXPERIENCIA
+                </span>
+
+                <h2>
+                    ¿Listo para descubrir
+                    San Bartolomé?
+                </h2>
+
+                <p>
+
+                    Pregúntale a TurisIA y comienza
+                    a planificar tu experiencia.
+
+                </p>
+
+            </div>
+
+
+            <button
+                class="final-cta-button"
+                onclick="abrirAsistente()"
+            >
+
+                Comenzar con TurisIA
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- ==================================================
+     FOOTER
+=================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-main">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="#inicio"
+                class="brand footer-logo"
+            >
+
+                <div class="brand-icon">
+
+                    <i class="fa-solid fa-compass"></i>
+
+                </div>
+
+                <div class="brand-text">
+
+                    <strong>
+                        TURIS<span>IA</span>
+                    </strong>
+
+                    <small>
+                        SAN BARTOLOMÉ
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <p>
+
+                Tecnología e inteligencia artificial
+                para descubrir, valorar y compartir
+                San Bartolomé.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Explora
+            </h4>
+
+            <a href="pages/pages2/lugares.html">
+                Lugares
+            </a>
+
+            <a href="pages/pages2/pages3/rutasdecaminata.html">
+                Rutas
+            </a>
+
+            <a href="pages/pages2/experiencias.html">
+                Experiencias
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Cultura
+            </h4>
+
+            <a href="pages/pages2/historia.html">
+                Historia
+            </a>
+
+            <a href="pages/pages2/pages3/festifivades.html">
+                Festividades
+            </a>
+
+            <a href="pages/pages2/gastronomiayhoteleria.html">
+                Gastronomía
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                TurisIA
+            </h4>
+
+            <a href="#" onclick="abrirAsistente(); return false;">
+                Asistente IA
+            </a>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 TurisIA. Proyecto de turismo inteligente.
+        </span>
+
+        <span>
+            San Bartolomé · Huarochirí · Lima, Perú
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==================================================
+     BOTÓN FLOTANTE IA
+=================================================== -->
+
+<button
+    class="chat-button"
+    id="chatButton"
+    onclick="abrirAsistente()"
+    aria-label="Abrir TurisIA"
+>
+
+    <span class="chat-button-pulse"></span>
+
+    <i class="fa-solid fa-sparkles"></i>
+
+</button>
+
+
+
+<!-- ==================================================
+     VENTANA DEL CHAT
+=================================================== -->
+
+<div
+    class="chat-window"
+    id="chatWindow"
+>
+
+
+    <!-- HEADER CHAT -->
+
+    <div class="chat-header">
+
+        <div class="chat-header-info">
+
+            <div class="chat-avatar">
+
+                <i class="fa-solid fa-sparkles"></i>
+
+            </div>
+
+            <div>
+
+                <strong>
+                    TurisIA
+                </strong>
+
+                <span>
+                    Asistente turístico
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="chat-header-actions">
+
+            <button
+                id="limpiarChat"
+                title="Limpiar conversación"
+            >
+
+                <i class="fa-solid fa-trash"></i>
+
+            </button>
+
+            <button
+                id="cerrarChat"
+                title="Cerrar"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CUERPO CHAT -->
+
+    <div
+        class="chat-body"
+        id="chatBody"
+    >
+
+        <div class="bot-message">
+
+            <strong>
+                ¡Hola! Soy TurisIA.
+            </strong>
+
+            <br><br>
+
+            Estoy aquí para ayudarte a
+            descubrir San Bartolomé.
+
+            <br><br>
+
+            Puedes preguntarme por:
+
+            <br><br>
+
+            📍 Lugares turísticos
+
+            <br>
+
+            🥾 Rutas
+
+            <br>
+
+            🏛️ Cultura e historia
+
+            <br>
+
+            🍽️ Gastronomía
+
+            <br>
+
+            🎉 Festividades
+
+        </div>
+
+    </div>
+
+
+
+    <!-- INPUT -->
+
+    <div class="chat-input-area">
+
+        <input
+            type="text"
+            id="mensaje"
+            placeholder="Pregúntale algo a TurisIA..."
+            autocomplete="off"
+        >
+
+        <button
+            id="enviar"
+            title="Enviar mensaje"
+        >
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+=================================================== -->
+
+<script>
+
+    /* ==========================================
+       ABRIR ASISTENTE
+    =========================================== */
+
+    function abrirAsistente() {
+
+        const ventana =
+            document.getElementById("chatWindow");
+
+        if (!ventana) return;
+
+        ventana.style.display = "flex";
+
+        setTimeout(() => {
+
+            const input =
+                document.getElementById("mensaje");
+
+            if (input) {
+
+                input.focus();
+
+            }
+
+        }, 150);
+
+    }
+
+
+
+    /* ==========================================
+       MENU MOBILE
+    =========================================== */
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+
+            const button =
+                document.getElementById(
+                    "mobileMenuButton"
+                );
+
+            const menu =
+                document.getElementById(
+                    "mobileMenu"
+                );
+
+
+            if (
+                button &&
+                menu
+            ) {
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        menu.classList.toggle(
+                            "active"
+                        );
+
+                    }
+                );
+
+
+                menu
+                    .querySelectorAll("a")
+                    .forEach(link => {
+
+                        link.addEventListener(
+                            "click",
+                            () => {
+
+                                menu.classList.remove(
+                                    "active"
+                                );
+
+                            }
+                        );
+
+                    });
+
+            }
+
+        }
+    );
+
+</script>
+
+
+
+<!-- ==========================================
+     APP PRINCIPAL
+=========================================== -->
+
+
+<script src="js/database.js"></script>
+<script src="js/intenciones.js"></script>
+<script src="js/planificador.js"></script>
+<script src="js/asistente.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

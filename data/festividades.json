@@ -1,0 +1,12 @@
+[
+  {
+    "id": "festividades-san-bartolome",
+    "nombre": "Festividades de San Bartolomé",
+    "descripcion": "Espacio destinado a recopilar las principales celebraciones culturales y religiosas del distrito.",
+    "categorias": [
+      "tradicion",
+      "cultura",
+      "religion"
+    ]
+  }
+]

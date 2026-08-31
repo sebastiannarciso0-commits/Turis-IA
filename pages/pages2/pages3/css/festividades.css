@@ -1,0 +1,1650 @@
+
+/* =====================================================
+   TURIS-IA
+   FESTIVIDADES Y TRADICIONES
+===================================================== */
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+
+    --primary: #0f766e;
+    --primary-dark: #0b5f59;
+    --primary-light: #e4f3f1;
+
+    --dark: #173f3b;
+    --dark-2: #102f2d;
+
+    --text: #607975;
+    --text-light: #78908c;
+
+    --background: #f7faf9;
+    --white: #ffffff;
+
+    --border: #e1ecea;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+
+    background: var(--background);
+
+    color: var(--dark);
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.fest-header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 76px;
+
+    background: rgba(255,255,255,0.96);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid #e6eeee;
+
+    z-index: 1000;
+
+}
+
+
+.fest-navbar {
+
+    max-width: 1200px;
+
+    height: 100%;
+
+    margin: auto;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.fest-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: var(--dark);
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 23px;
+
+    font-weight: 800;
+
+}
+
+
+.fest-logo-icon {
+
+    color: var(--primary);
+
+}
+
+
+.logo-ia {
+
+    color: var(--primary);
+
+}
+
+
+.fest-nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    list-style: none;
+
+}
+
+
+.fest-nav-links a {
+
+    text-decoration: none;
+
+    color: #45635f;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+
+}
+
+
+.fest-nav-links a:hover,
+
+.fest-nav-links a.active {
+
+    color: var(--primary);
+
+}
+
+
+.fest-ai-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    background: var(--primary);
+
+    color: white !important;
+
+    padding: 11px 17px;
+
+    border-radius: 10px;
+
+}
+
+
+.fest-ai-button:hover {
+
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.fest-hero {
+
+    position: relative;
+
+    min-height: 670px;
+
+    margin-top: 76px;
+
+    display: flex;
+
+    align-items: center;
+
+    background-image: url("../img/festividades-san-bartolome.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.fest-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,35,33,0.95) 0%,
+            rgba(8,35,33,0.72) 45%,
+            rgba(8,35,33,0.20) 100%
+        );
+
+}
+
+
+.fest-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1200px;
+
+    width: 100%;
+
+    margin: auto;
+
+    padding: 80px 25px;
+
+    color: white;
+
+}
+
+
+.fest-hero-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    margin-bottom: 23px;
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.25);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+}
+
+
+.fest-hero h1 {
+
+    max-width: 760px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(45px, 6vw, 76px);
+
+    line-height: 1.03;
+
+    margin-bottom: 24px;
+
+}
+
+
+.fest-hero h1 span {
+
+    display: block;
+
+    color: #67d8ce;
+
+}
+
+
+.fest-hero p {
+
+    max-width: 650px;
+
+    color: #e2efed;
+
+    font-size: 18px;
+
+    margin-bottom: 32px;
+
+}
+
+
+.fest-hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+.fest-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 14px 21px;
+
+    border-radius: 11px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+
+}
+
+
+.fest-btn-primary {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+
+.fest-btn-primary:hover {
+
+    background: var(--primary-dark);
+
+    transform: translateY(-3px);
+
+}
+
+
+.fest-btn-outline {
+
+    color: white;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+}
+
+
+.fest-btn-outline:hover {
+
+    background: white;
+
+    color: var(--dark);
+
+}
+
+
+/* =====================================================
+   SECCIONES
+===================================================== */
+
+.fest-section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 25px;
+
+}
+
+
+.fest-section-label {
+
+    display: block;
+
+    color: var(--primary);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.fest-section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 50px;
+
+    margin-bottom: 45px;
+
+}
+
+
+.fest-section-heading h2,
+
+.fest-intro-text h2,
+
+.fest-community-content h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 40px;
+
+    line-height: 1.12;
+
+    color: var(--dark);
+
+}
+
+
+.fest-section-heading > p {
+
+    max-width: 470px;
+
+    color: var(--text);
+
+    font-size: 15px;
+
+}
+
+
+/* =====================================================
+   INTRODUCCIÓN
+===================================================== */
+
+.fest-introduction {
+
+    display: grid;
+
+    grid-template-columns: 1.25fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.fest-intro-text {
+
+    max-width: 680px;
+
+}
+
+
+.fest-intro-text h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.fest-intro-text p {
+
+    color: var(--text);
+
+    margin-bottom: 15px;
+
+}
+
+
+.fest-intro-statistics {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.fest-stat {
+
+    padding: 25px 15px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 17px;
+
+    text-align: center;
+
+}
+
+
+.fest-stat strong {
+
+    display: block;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 34px;
+
+    color: var(--primary);
+
+}
+
+
+.fest-stat span {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: var(--dark);
+
+}
+
+
+.fest-stat small {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 11px;
+
+    color: var(--text-light);
+
+}
+
+
+/* =====================================================
+   EVENTOS
+===================================================== */
+
+.fest-events-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.fest-event-card {
+
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+.fest-event-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 50px rgba(15,118,110,0.12);
+
+}
+
+
+.fest-event-image {
+
+    height: 250px;
+
+    position: relative;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.fest-event-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,0.55),
+            transparent 60%
+        );
+
+}
+
+
+.fest-event-category {
+
+    position: absolute;
+
+    top: 16px;
+    left: 16px;
+
+    z-index: 2;
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.93);
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+
+}
+
+
+.fest-event-date {
+
+    position: absolute;
+
+    bottom: 15px;
+    right: 15px;
+
+    z-index: 2;
+
+    color: white;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+}
+
+
+.fest-event-content {
+
+    padding: 25px;
+
+}
+
+
+.fest-small-label {
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+.fest-event-content h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 23px;
+
+    line-height: 1.2;
+
+    margin: 8px 0 13px;
+
+}
+
+
+.fest-event-content p {
+
+    color: var(--text);
+
+    font-size: 14px;
+
+}
+
+
+.fest-event-info {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #edf1f0;
+
+}
+
+
+.fest-event-info span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: var(--text-light);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+.fest-event-info i {
+
+    color: var(--primary);
+
+}
+
+
+/* =====================================================
+   TRADICIONES
+===================================================== */
+
+.fest-traditions-section {
+
+    background: #102f2d;
+
+}
+
+
+.fest-traditions-inner {
+
+    padding-top: 90px;
+
+    padding-bottom: 100px;
+
+}
+
+
+.fest-light-heading h2 {
+
+    color: white;
+
+}
+
+
+.fest-light-heading > p {
+
+    color: #a9c3bf;
+
+}
+
+
+.fest-traditions-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.fest-tradition-card {
+
+    display: grid;
+
+    grid-template-columns: 190px 1fr;
+
+    min-height: 280px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #173f3b;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s;
+
+}
+
+
+.fest-tradition-card:hover {
+
+    transform: translateY(-5px);
+
+    background: #1b4945;
+
+}
+
+
+.fest-tradition-image {
+
+    min-height: 280px;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.fest-tradition-content {
+
+    padding: 25px;
+
+    position: relative;
+
+}
+
+
+.fest-tradition-number {
+
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    color: rgba(255,255,255,0.18);
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+}
+
+
+.fest-tradition-type {
+
+    color: #67d8ce;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+.fest-tradition-content h3 {
+
+    margin-top: 10px;
+
+    margin-bottom: 12px;
+
+    padding-right: 35px;
+
+    color: white;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 21px;
+
+    line-height: 1.2;
+
+}
+
+
+.fest-tradition-content p {
+
+    color: #aec5c2;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+}
+
+
+.fest-tradition-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 17px;
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    background: rgba(103,216,206,0.10);
+
+    color: #8de1d9;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+/* =====================================================
+   COMUNIDAD / CORTE DE LEÑA
+===================================================== */
+
+.fest-community {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 65px;
+
+    align-items: center;
+
+}
+
+
+.fest-community-image {
+
+    min-height: 430px;
+
+    border-radius: 25px;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.fest-community-content h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.fest-community-content > p {
+
+    color: var(--text);
+
+    margin-bottom: 25px;
+
+}
+
+
+.fest-community-highlight {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    background: var(--primary-light);
+
+    border-radius: 15px;
+
+}
+
+
+.fest-community-highlight > i {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 12px;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-size: 19px;
+
+}
+
+
+.fest-community-highlight strong {
+
+    display: block;
+
+    color: var(--dark);
+
+    font-size: 14px;
+
+}
+
+
+.fest-community-highlight span {
+
+    display: block;
+
+    color: var(--text-light);
+
+    font-size: 11px;
+
+    margin-top: 3px;
+
+}
+
+
+/* =====================================================
+   GASTRONOMÍA
+===================================================== */
+
+.fest-food-section {
+
+    background: #edf6f4;
+
+}
+
+
+.fest-food-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.fest-food-card {
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    border: 1px solid var(--border);
+
+}
+
+
+.fest-food-icon {
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 14px;
+
+    background: var(--primary-light);
+
+    color: var(--primary);
+
+    font-size: 21px;
+
+}
+
+
+.fest-food-card h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    margin-bottom: 8px;
+
+}
+
+
+.fest-food-card p {
+
+    color: var(--text);
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   TURIS-IA
+===================================================== */
+
+.fest-ai-section {
+
+    max-width: 1200px;
+
+    margin: 90px auto;
+
+    padding: 55px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #0b4f4a,
+            #0f766e
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+}
+
+
+.fest-ai-content {
+
+    max-width: 700px;
+
+}
+
+
+.fest-ai-label {
+
+    color: #9de4dd;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.fest-ai-content h2 {
+
+    color: white;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 36px;
+
+    line-height: 1.15;
+
+    margin: 10px 0 12px;
+
+}
+
+
+.fest-ai-content p {
+
+    color: #d6eeeb;
+
+    font-size: 14px;
+
+}
+
+
+.fest-ai-link {
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 15px 21px;
+
+    border-radius: 11px;
+
+    background: white;
+
+    color: var(--primary);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition: 0.3s;
+
+}
+
+
+.fest-ai-link:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.fest-footer {
+
+    background: #0b2927;
+
+    color: white;
+
+}
+
+
+.fest-footer-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 65px 25px 45px;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 45px;
+
+}
+
+
+.fest-footer-logo {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    margin-bottom: 17px;
+
+}
+
+
+.fest-footer-logo i,
+
+.fest-footer-logo span {
+
+    color: #67d8ce;
+
+}
+
+
+.fest-footer-brand p {
+
+    max-width: 390px;
+
+    color: #9db8b4;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+.fest-footer-social {
+
+    display: flex;
+
+    gap: 9px;
+
+    margin-top: 20px;
+
+}
+
+
+.fest-footer-social a {
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: rgba(255,255,255,0.07);
+
+    color: #b5cdca;
+
+    text-decoration: none;
+
+    transition: 0.25s;
+
+}
+
+
+.fest-footer-social a:hover {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+
+.fest-footer-column h3 {
+
+    color: white;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.fest-footer-column ul {
+
+    list-style: none;
+
+}
+
+
+.fest-footer-column li {
+
+    margin-bottom: 10px;
+
+}
+
+
+.fest-footer-column a {
+
+    color: #9db8b4;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.25s;
+
+}
+
+
+.fest-footer-column a:hover {
+
+    color: #67d8ce;
+
+    padding-left: 4px;
+
+}
+
+
+.fest-footer-bottom {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px 25px;
+
+    border-top: 1px solid rgba(255,255,255,0.09);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: #718f8a;
+
+    font-size: 11px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .fest-nav-links {
+
+        gap: 15px;
+
+    }
+
+
+    .fest-events-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .fest-traditions-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .fest-introduction {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .fest-community {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .fest-food-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .fest-footer-container {
+
+        grid-template-columns: 2fr 1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .fest-nav-links {
+
+        display: none;
+
+    }
+
+
+    .fest-hero {
+
+        min-height: 600px;
+
+    }
+
+
+    .fest-hero h1 {
+
+        font-size: 48px;
+
+    }
+
+
+    .fest-section {
+
+        padding: 70px 20px;
+
+    }
+
+
+    .fest-section-heading {
+
+        display: block;
+
+    }
+
+
+    .fest-section-heading > p {
+
+        margin-top: 15px;
+
+    }
+
+
+    .fest-events-grid,
+
+    .fest-food-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .fest-tradition-card {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .fest-tradition-image {
+
+        min-height: 230px;
+
+    }
+
+
+    .fest-ai-section {
+
+        margin: 65px 20px;
+
+        padding: 35px 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .fest-footer-container {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .fest-intro-statistics {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .fest-hero-content {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .fest-hero h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .fest-hero p {
+
+        font-size: 16px;
+
+    }
+
+
+    .fest-footer-container {
+
+        grid-template-columns: 1fr;
+
+        padding: 50px 20px 35px;
+
+    }
+
+
+    .fest-footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 20px;
+
+    }
+
+}

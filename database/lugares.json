@@ -1,0 +1,11 @@
+[
+  {
+    "id":1,
+    "nombre":"Chucuncuya",
+    "descripcion":"Sitio arqueológico...",
+    "latitud":-11.905,
+    "longitud":-76.530,
+    "horario":"08:00-17:00",
+    "estado":"Bueno"
+  }
+]
