@@ -1,9 +1,0 @@
-{
-  "name": "turisia",
-  "version": "1.0.0",
-  "description": "Asistente turístico inteligente de San Bartolomé",
-  "private": true,
-  "dependencies": {
-    "openai": "^5.12.2"
-  }
-}
