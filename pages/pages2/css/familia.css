@@ -1,0 +1,2235 @@
+/* =========================================================
+   TURIS-IA
+   SECCIÓN: EN FAMILIA
+   SAN BARTOLOMÉ - HUAROCHIRÍ
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --family-primary: #0f766e;
+    --family-primary-dark: #0a5c56;
+    --family-primary-light: #e0f3ef;
+
+    --family-accent: #c89b5c;
+    --family-accent-light: #f5e8d2;
+
+    --family-dark: #102522;
+    --family-dark-soft: #183732;
+
+    --family-text: #293b37;
+    --family-text-light: #6c7b77;
+
+    --family-white: #ffffff;
+    --family-light: #f6f8f7;
+    --family-light-2: #edf3f1;
+
+    --family-border: #dfe8e5;
+
+    --family-shadow:
+        0 15px 45px rgba(16, 37, 34, .08);
+
+    --family-shadow-hover:
+        0 25px 60px rgba(16, 37, 34, .15);
+
+    --family-radius: 22px;
+
+    --family-container: 1240px;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family: "DM Sans", sans-serif;
+
+    color: var(--family-text);
+
+    background: var(--family-white);
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+
+}
+
+
+img {
+
+    display: block;
+
+    width: 100%;
+
+    object-fit: cover;
+
+}
+
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+button {
+
+    font-family: inherit;
+
+}
+
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.family-container {
+
+    width: min(
+        var(--family-container),
+        calc(100% - 80px)
+    );
+
+    margin: auto;
+
+}
+
+
+/* =========================================================
+   TOPBAR
+========================================================= */
+
+.family-topbar {
+
+    height: 38px;
+
+    background: var(--family-dark);
+
+    color: rgba(255,255,255,.78);
+
+    font-size: 12px;
+
+}
+
+
+.family-topbar-content {
+
+    height: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.family-topbar span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.family-topbar i {
+
+    color: var(--family-accent);
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.family-header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(255,255,255,.96);
+
+    backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid transparent;
+
+    transition: .3s ease;
+
+}
+
+
+.family-header.scrolled {
+
+    border-bottom-color: var(--family-border);
+
+    box-shadow:
+        0 5px 25px rgba(0,0,0,.06);
+
+}
+
+
+.family-navbar {
+
+    min-height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.family-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    letter-spacing: -.5px;
+
+    white-space: nowrap;
+
+}
+
+
+.family-logo > span:last-child span {
+
+    color: var(--family-primary);
+
+}
+
+
+.family-logo-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 12px;
+
+    background: var(--family-primary);
+
+    color: white;
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================================
+   NAV
+========================================================= */
+
+.family-nav {
+
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+}
+
+
+.family-nav a {
+
+    position: relative;
+
+    color: #4c5c58;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: .25s ease;
+
+}
+
+
+.family-nav a:hover {
+
+    color: var(--family-primary);
+
+}
+
+
+.family-nav a.active {
+
+    color: var(--family-primary);
+
+}
+
+
+.family-nav a.active::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: -11px;
+
+    height: 2px;
+
+    border-radius: 10px;
+
+    background: var(--family-primary);
+
+}
+
+
+/* =========================================================
+   BOTÓN IA
+========================================================= */
+
+.family-ai-button {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    background: var(--family-dark);
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: .3s ease;
+
+}
+
+
+.family-ai-button i {
+
+    color: #72d8ce;
+
+}
+
+
+.family-ai-button:hover {
+
+    background: var(--family-primary);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.family-hero {
+
+    position: relative;
+
+    min-height: 690px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    color: white;
+
+}
+
+
+.family-hero-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        url("../img/familia-hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    transform: scale(1.03);
+
+}
+
+
+.family-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(7,28,25,.94) 0%,
+            rgba(7,28,25,.73) 43%,
+            rgba(7,28,25,.28) 100%
+        );
+
+}
+
+
+.family-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 110px 0;
+
+    animation:
+        familyFadeUp
+        .9s
+        ease
+        forwards;
+
+}
+
+
+.family-eyebrow {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    color: #bce9e3;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+
+}
+
+
+.family-eyebrow i {
+
+    color: var(--family-accent);
+
+}
+
+
+.family-hero h1 {
+
+    max-width: 850px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(
+        55px,
+        7vw,
+        92px
+    );
+
+    line-height: .98;
+
+    letter-spacing: -4px;
+
+    font-weight: 800;
+
+    margin-bottom: 30px;
+
+}
+
+
+.family-hero h1 em {
+
+    display: block;
+
+    color: #d8b77c;
+
+    font-family: "Playfair Display", serif;
+
+    font-weight: 500;
+
+    letter-spacing: -2px;
+
+}
+
+
+.family-hero-content > p {
+
+    max-width: 600px;
+
+    color: rgba(255,255,255,.82);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================================================
+   HERO BOTONES
+========================================================= */
+
+.family-hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+
+}
+
+
+.family-button {
+
+    min-height: 52px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 11px;
+
+    padding: 0 23px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: .3s ease;
+
+}
+
+
+.family-button-primary {
+
+    background: var(--family-primary);
+
+    color: white;
+
+}
+
+
+.family-button-primary:hover {
+
+    background: #12958b;
+
+    transform: translateY(-3px);
+
+}
+
+
+.family-button-outline {
+
+    color: white;
+
+    background: rgba(255,255,255,.06);
+
+    border: 1px solid rgba(255,255,255,.4);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+.family-button-outline:hover {
+
+    background: white;
+
+    color: var(--family-dark);
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.family-intro {
+
+    padding: 115px 0;
+
+    background: white;
+
+}
+
+
+.family-intro-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: start;
+
+}
+
+
+.family-section-label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--family-primary);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.family-section-label::before {
+
+    content: "";
+
+    width: 27px;
+
+    height: 2px;
+
+    background: var(--family-primary);
+
+}
+
+
+.family-intro h2 {
+
+    max-width: 580px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(
+        36px,
+        4vw,
+        57px
+    );
+
+    line-height: 1.07;
+
+    letter-spacing: -2.5px;
+
+    color: var(--family-dark);
+
+}
+
+
+.family-intro-grid > div:last-child {
+
+    padding-top: 31px;
+
+}
+
+
+.family-intro p {
+
+    color: var(--family-text-light);
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+.family-section {
+
+    padding: 110px 0;
+
+    background: var(--family-light);
+
+}
+
+
+.family-section-header {
+
+    display: grid;
+
+    grid-template-columns: 1fr 420px;
+
+    align-items: end;
+
+    gap: 60px;
+
+    margin-bottom: 43px;
+
+}
+
+
+.family-section-header h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(
+        38px,
+        5vw,
+        60px
+    );
+
+    line-height: 1;
+
+    letter-spacing: -2.5px;
+
+    color: var(--family-dark);
+
+}
+
+
+.family-section-header > p {
+
+    color: var(--family-text-light);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   FILTROS
+========================================================= */
+
+.family-filters {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.family-filter {
+
+    border: 1px solid var(--family-border);
+
+    background: white;
+
+    color: var(--family-text-light);
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+
+}
+
+
+.family-filter:hover {
+
+    color: var(--family-primary);
+
+    border-color: var(--family-primary);
+
+}
+
+
+.family-filter.active {
+
+    background: var(--family-primary);
+
+    color: white;
+
+    border-color: var(--family-primary);
+
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.family-cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.family-card {
+
+    background: white;
+
+    border-radius: var(--family-radius);
+
+    overflow: hidden;
+
+    border: 1px solid var(--family-border);
+
+    box-shadow:
+        0 8px 25px rgba(16,37,34,.045);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+
+}
+
+
+.family-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        var(--family-shadow-hover);
+
+}
+
+
+/* =========================================================
+   CARD IMAGEN
+========================================================= */
+
+.family-card-image {
+
+    height: 245px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #dce7e3;
+
+}
+
+
+.family-card-image img {
+
+    height: 100%;
+
+    transition:
+        transform .6s ease;
+
+}
+
+
+.family-card:hover
+.family-card-image img {
+
+    transform: scale(1.07);
+
+}
+
+
+/* =========================================================
+   TAG
+========================================================= */
+
+.family-card-tag {
+
+    position: absolute;
+
+    top: 17px;
+
+    left: 17px;
+
+    padding: 7px 11px;
+
+    border-radius: 7px;
+
+    background: rgba(15,118,110,.95);
+
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.family-card-content {
+
+    position: relative;
+
+    padding: 27px;
+
+}
+
+
+.family-card-icon {
+
+    width: 46px;
+
+    height: 46px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 13px;
+
+    background: var(--family-primary-light);
+
+    color: var(--family-primary);
+
+    font-size: 18px;
+
+}
+
+
+.family-card-content h3 {
+
+    color: var(--family-dark);
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 21px;
+
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+
+}
+
+
+.family-card-content p {
+
+    min-height: 78px;
+
+    color: var(--family-text-light);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================================
+   CARD INFO
+========================================================= */
+
+.family-card-info {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+
+    padding: 16px 0;
+
+    border-top: 1px solid var(--family-border);
+
+    border-bottom: 1px solid var(--family-border);
+
+    margin-bottom: 18px;
+
+}
+
+
+.family-card-info span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #74827e;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}
+
+
+.family-card-info i {
+
+    color: var(--family-primary);
+
+}
+
+
+/* =========================================================
+   CARD LINK
+========================================================= */
+
+.family-card-link {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: var(--family-primary);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    transition: .25s ease;
+
+}
+
+
+.family-card-link i {
+
+    font-size: 10px;
+
+    transition: .25s ease;
+
+}
+
+
+.family-card-link:hover i {
+
+    transform: translateX(5px);
+
+}
+
+
+/* =========================================================
+   PLAN FAMILIAR
+========================================================= */
+
+.family-plan {
+
+    padding: 120px 0;
+
+    background: var(--family-dark);
+
+    color: white;
+
+}
+
+
+.family-plan-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 100px;
+
+    align-items: center;
+
+}
+
+
+.family-plan-text .family-section-label {
+
+    color: #7ed9ce;
+
+}
+
+
+.family-plan-text .family-section-label::before {
+
+    background: #7ed9ce;
+
+}
+
+
+.family-plan-text h2 {
+
+    max-width: 550px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: clamp(
+        38px,
+        5vw,
+        60px
+    );
+
+    line-height: 1.04;
+
+    letter-spacing: -2.5px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.family-plan-text > p {
+
+    max-width: 500px;
+
+    color: rgba(255,255,255,.62);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================================
+   PLAN BUTTON
+========================================================= */
+
+.family-plan-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 20px;
+
+    border-radius: 11px;
+
+    background: var(--family-primary);
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    transition: .3s ease;
+
+}
+
+
+.family-plan-button:hover {
+
+    background: #16a096;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.family-timeline {
+
+    position: relative;
+
+    padding-left: 40px;
+
+}
+
+
+.family-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 14px;
+
+    top: 25px;
+
+    bottom: 25px;
+
+    width: 1px;
+
+    background:
+        rgba(255,255,255,.15);
+
+}
+
+
+.family-timeline-item {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 52px 1fr;
+
+    gap: 22px;
+
+    padding: 22px 0;
+
+}
+
+
+.family-timeline-number {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 30px;
+
+    height: 30px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--family-primary);
+
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+}
+
+
+.family-timeline-item span {
+
+    color: #75d4ca;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.family-timeline-item h3 {
+
+    margin: 5px 0;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 22px;
+
+}
+
+
+.family-timeline-item p {
+
+    max-width: 350px;
+
+    color: rgba(255,255,255,.55);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   CONSEJOS
+========================================================= */
+
+.family-tips {
+
+    padding: 110px 0;
+
+    background: white;
+
+}
+
+
+.family-tips-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.family-tip {
+
+    padding: 30px;
+
+    border: 1px solid var(--family-border);
+
+    border-radius: 18px;
+
+    transition: .3s ease;
+
+}
+
+
+.family-tip:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        var(--family-shadow);
+
+}
+
+
+.family-tip > i {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 14px;
+
+    background: var(--family-accent-light);
+
+    color: var(--family-accent);
+
+    font-size: 19px;
+
+}
+
+
+.family-tip h3 {
+
+    font-family: "Manrope", sans-serif;
+
+    color: var(--family-dark);
+
+    font-size: 18px;
+
+    margin-bottom: 9px;
+
+}
+
+
+.family-tip p {
+
+    color: var(--family-text-light);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   CTA TURIS-IA
+========================================================= */
+
+.family-ai-section {
+
+    padding: 90px 0;
+
+    background: var(--family-light);
+
+}
+
+
+.family-ai-box {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        75px
+        1fr
+        auto;
+
+    align-items: center;
+
+    gap: 28px;
+
+    padding: 43px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            115deg,
+            #102522,
+            #17443e
+        );
+
+    color: white;
+
+    overflow: hidden;
+
+}
+
+
+.family-ai-box::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    right: -170px;
+
+    top: -210px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+}
+
+
+.family-ai-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 18px;
+
+    background:
+        rgba(15,118,110,.3);
+
+    color: #7bd9cf;
+
+    font-size: 23px;
+
+}
+
+
+.family-ai-box > div:nth-child(2) {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.family-ai-box span {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #7bd9cf;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.family-ai-box h2 {
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 30px;
+
+    line-height: 1.15;
+
+    margin-bottom: 8px;
+
+}
+
+
+.family-ai-box p {
+
+    max-width: 650px;
+
+    color: rgba(255,255,255,.58);
+
+    font-size: 12px;
+
+}
+
+
+.family-ai-link {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px 20px;
+
+    border-radius: 11px;
+
+    background: white;
+
+    color: var(--family-dark);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    transition: .3s ease;
+
+}
+
+
+.family-ai-link:hover {
+
+    background: var(--family-primary);
+
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.family-footer {
+
+    padding-top: 75px;
+
+    background: #0b1917;
+
+    color: white;
+
+}
+
+
+.family-footer-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.7fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 60px;
+
+    padding-bottom: 60px;
+
+}
+
+
+.family-footer-brand {
+
+    max-width: 310px;
+
+}
+
+
+.family-footer-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    font-family: "Manrope", sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+}
+
+
+.family-footer-logo i {
+
+    color: #68d2c7;
+
+}
+
+
+.family-footer-logo span {
+
+    color: #68d2c7;
+
+}
+
+
+.family-footer-brand p {
+
+    color: rgba(255,255,255,.52);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+.family-footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+}
+
+
+.family-footer-column h3 {
+
+    margin-bottom: 8px;
+
+    color: white;
+
+    font-size: 11px;
+
+    letter-spacing: 1.8px;
+
+}
+
+
+.family-footer-column a {
+
+    width: fit-content;
+
+    color: rgba(255,255,255,.52);
+
+    font-size: 13px;
+
+    transition: .25s ease;
+
+}
+
+
+.family-footer-column a:hover {
+
+    color: #75d8ce;
+
+    transform: translateX(3px);
+
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.family-footer-bottom {
+
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    color: rgba(255,255,255,.36);
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================================
+   ANIMACIÓN
+========================================================= */
+
+@keyframes familyFadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+
+    width: 9px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background: #edf2f0;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--family-primary);
+
+    border-radius: 10px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--family-primary-dark);
+
+}
+
+
+/* =========================================================
+   SELECCIÓN
+========================================================= */
+
+::selection {
+
+    background: var(--family-primary);
+
+    color: white;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+
+    .family-nav {
+
+        gap: 17px;
+
+    }
+
+
+    .family-ai-button {
+
+        padding: 10px 13px;
+
+    }
+
+
+    .family-cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .family-tips-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+}
+
+
+/* =========================================================
+   TABLET PEQUEÑA
+========================================================= */
+
+@media (max-width: 850px) {
+
+
+    .family-container {
+
+        width:
+            calc(100% - 40px);
+
+    }
+
+
+    .family-nav {
+
+        display: none;
+
+    }
+
+
+    .family-navbar {
+
+        min-height: 70px;
+
+    }
+
+
+    .family-hero {
+
+        min-height: 620px;
+
+    }
+
+
+    .family-hero h1 {
+
+        font-size: 58px;
+
+        letter-spacing: -3px;
+
+    }
+
+
+    .family-intro-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+
+    .family-intro-grid > div:last-child {
+
+        padding-top: 0;
+
+    }
+
+
+    .family-section-header {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .family-plan-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+    }
+
+
+    .family-ai-box {
+
+        grid-template-columns:
+            65px
+            1fr;
+
+    }
+
+
+    .family-ai-link {
+
+        grid-column: 2;
+
+        width: fit-content;
+
+    }
+
+
+    .family-footer-grid {
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+        gap: 45px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 600px) {
+
+
+    .family-container {
+
+        width:
+            calc(100% - 30px);
+
+    }
+
+
+    .family-topbar {
+
+        height: auto;
+
+        padding: 9px 0;
+
+    }
+
+
+    .family-topbar-content {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 3px;
+
+    }
+
+
+    .family-logo {
+
+        font-size: 18px;
+
+    }
+
+
+    .family-logo-icon {
+
+        width: 35px;
+
+        height: 35px;
+
+    }
+
+
+    .family-ai-button {
+
+        padding: 9px 11px;
+
+        font-size: 11px;
+
+    }
+
+
+    .family-hero {
+
+        min-height: 590px;
+
+    }
+
+
+    .family-hero-content {
+
+        padding: 80px 0;
+
+    }
+
+
+    .family-hero h1 {
+
+        font-size: 49px;
+
+        letter-spacing: -2.5px;
+
+    }
+
+
+    .family-hero-content > p {
+
+        font-size: 15px;
+
+    }
+
+
+    .family-button {
+
+        width: 100%;
+
+    }
+
+
+    .family-intro {
+
+        padding: 75px 0;
+
+    }
+
+
+    .family-section {
+
+        padding: 75px 0;
+
+    }
+
+
+    .family-section-header h2 {
+
+        font-size: 42px;
+
+    }
+
+
+    .family-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .family-card-image {
+
+        height: 240px;
+
+    }
+
+
+    .family-plan {
+
+        padding: 80px 0;
+
+    }
+
+
+    .family-plan-text h2 {
+
+        font-size: 42px;
+
+    }
+
+
+    .family-timeline {
+
+        padding-left: 20px;
+
+    }
+
+
+    .family-timeline::before {
+
+        left: 0;
+
+    }
+
+
+    .family-timeline-item {
+
+        grid-template-columns:
+            42px
+            1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .family-timeline-number {
+
+        width: 27px;
+
+        height: 27px;
+
+    }
+
+
+    .family-tips {
+
+        padding: 75px 0;
+
+    }
+
+
+    .family-tips-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .family-ai-section {
+
+        padding: 65px 0;
+
+    }
+
+
+    .family-ai-box {
+
+        grid-template-columns: 1fr;
+
+        padding: 30px;
+
+    }
+
+
+    .family-ai-link {
+
+        grid-column: auto;
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+
+    .family-footer {
+
+        padding-top: 55px;
+
+    }
+
+
+    .family-footer-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .family-footer-bottom {
+
+        min-height: auto;
+
+        padding: 18px 0;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        justify-content: center;
+
+        gap: 5px;
+
+    }
+
+}
